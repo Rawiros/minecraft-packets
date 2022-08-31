@@ -1,13 +1,3 @@
-export interface 0 {
-	present: boolean;
-	itemId: number;
-	itemCount: number;
-}
-
-export interface Ingredient [
-	0;
-]
-
 export interface Result {
 	present: boolean;
 	itemId: number;
@@ -15,8 +5,10 @@ export interface Result {
 }
 
 export interface Data {
+	width: number;
+	height: number;
 	group: string;
-	ingredients: Ingredient[];
+	ingredients: any[][][];
 	result: Result;
 }
 

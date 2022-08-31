@@ -1,0 +1,12 @@
+{
+    "action": 0,
+    "data": [
+        {
+            "UUID": "b3b1f2af-d604-30fb-87b7-09a24d2fc754",
+            "name": "PacketUser",
+            "properties": [],
+            "gamemode": 1,
+            "ping": 0
+        }
+    ]
+}

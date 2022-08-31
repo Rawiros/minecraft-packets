@@ -3,15 +3,15 @@
  * State: PLAY
  * Normalized Name: Login
  * Minecraft Version: 1.18.2
- * ISO Creation Date: 2022-08-31T16:07:26.215Z
- * Creation Date: Wed Aug 31 2022 18:07:26 GMT+0200 (Central European Summer Time)
+ * ISO Creation Date: 2022-08-31T23:00:59.959Z
+ * Creation Date: Thu Sep 01 2022 01:00:59 GMT+0200 (Central European Summer Time)
  */
 // Define Default Packet Data
 let PacketData = {
-    "entityId": 71,
+    "entityId": 17,
     "isHardcore": false,
-    "gameMode": 0,
-    "previousGameMode": -1,
+    "gameMode": 1,
+    "previousGameMode": 0,
     "worldNames": [
         "minecraft:overworld",
         "minecraft:the_nether",

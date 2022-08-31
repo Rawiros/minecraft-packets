@@ -3,8 +3,8 @@
  * State: LOGIN
  * Normalized Name: Success
  * Minecraft Version: 1.18.2
- * ISO Creation Date: 2022-08-31T16:07:25.878Z
- * Creation Date: Wed Aug 31 2022 18:07:25 GMT+0200 (Central European Summer Time)
+ * ISO Creation Date: 2022-08-31T23:00:59.622Z
+ * Creation Date: Thu Sep 01 2022 01:00:59 GMT+0200 (Central European Summer Time)
  */
 // Define Default Packet Data
 let PacketData = {

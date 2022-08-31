@@ -3,8 +3,8 @@
  * State: PLAY
  * Normalized Name: WindowItems
  * Minecraft Version: 1.18.2
- * ISO Creation Date: 2022-08-31T16:07:26.844Z
- * Creation Date: Wed Aug 31 2022 18:07:26 GMT+0200 (Central European Summer Time)
+ * ISO Creation Date: 2022-08-31T23:01:00.561Z
+ * Creation Date: Thu Sep 01 2022 01:01:00 GMT+0200 (Central European Summer Time)
  */
 // Define Default Packet Data
 let PacketData = {
@@ -120,19 +120,13 @@ let PacketData = {
             "present": false
         },
         {
-            "present": true,
-            "itemId": 692,
-            "itemCount": 56
+            "present": false
         },
         {
-            "present": true,
-            "itemId": 9,
-            "itemCount": 64
+            "present": false
         },
         {
-            "present": true,
-            "itemId": 21,
-            "itemCount": 64
+            "present": false
         },
         {
             "present": false

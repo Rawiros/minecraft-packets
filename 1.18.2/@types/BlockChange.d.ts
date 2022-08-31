@@ -1,0 +1,10 @@
+export interface Location {
+	x: number;
+	z: number;
+	y: number;
+}
+
+export default interface RootObject {
+	location: Location;
+	type: number;
+}

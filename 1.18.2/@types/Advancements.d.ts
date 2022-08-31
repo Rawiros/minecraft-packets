@@ -17,6 +17,7 @@ export interface DisplayData {
 	icon: Icon;
 	frameType: number;
 	flags: Flag;
+	backgroundTexture: string;
 	xCord: number;
 	yCord: number;
 }
@@ -30,7 +31,6 @@ export interface Requirement [
 ]
 
 export interface Value {
-	parentId: string;
 	displayData: DisplayData;
 	criteria: Criteria[];
 	requirements: Requirement[];
@@ -43,6 +43,7 @@ export interface AdvancementMapping {
 
 export interface Value {
 	criterionIdentifier: string;
+	criterionProgress: number[];
 }
 
 export interface ProgressMapping {

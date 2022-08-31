@@ -1,0 +1,14 @@
+{
+    "team": "collideRule_-117",
+    "mode": 0,
+    "name": "{\"text\":\"collideRule_-117\"}",
+    "friendlyFire": 1,
+    "nameTagVisibility": "always",
+    "collisionRule": "never",
+    "formatting": 21,
+    "prefix": "{\"text\":\"\"}",
+    "suffix": "{\"text\":\"\"}",
+    "players": [
+        "PacketUser"
+    ]
+}

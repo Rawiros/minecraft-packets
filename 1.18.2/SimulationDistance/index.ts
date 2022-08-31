@@ -3,8 +3,8 @@
  * State: PLAY
  * Normalized Name: SimulationDistance
  * Minecraft Version: 1.18.2
- * ISO Creation Date: 2022-08-31T16:07:26.686Z
- * Creation Date: Wed Aug 31 2022 18:07:26 GMT+0200 (Central European Summer Time)
+ * ISO Creation Date: 2022-08-31T23:01:00.523Z
+ * Creation Date: Thu Sep 01 2022 01:01:00 GMT+0200 (Central European Summer Time)
  */
 // Define Default Packet Data
 let PacketData = {

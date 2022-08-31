@@ -3,8 +3,8 @@
  * State: PLAY
  * Normalized Name: Tags
  * Minecraft Version: 1.18.2
- * ISO Creation Date: 2022-08-31T16:07:26.581Z
- * Creation Date: Wed Aug 31 2022 18:07:26 GMT+0200 (Central European Summer Time)
+ * ISO Creation Date: 2022-08-31T23:01:00.431Z
+ * Creation Date: Thu Sep 01 2022 01:01:00 GMT+0200 (Central European Summer Time)
  */
 // Define Default Packet Data
 let PacketData = {
@@ -20,14 +20,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:is_hill",
-                    "entries": [
-                        18,
-                        20,
-                        19
-                    ]
-                },
-                {
                     "tagName": "minecraft:has_structure/nether_fortress",
                     "entries": [
                         51,
@@ -35,6 +27,14 @@ let PacketData = {
                         54,
                         53,
                         52
+                    ]
+                },
+                {
+                    "tagName": "minecraft:is_hill",
+                    "entries": [
+                        18,
+                        20,
+                        19
                     ]
                 },
                 {
@@ -191,15 +191,15 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:has_structure/village_snowy",
-                    "entries": [
-                        3
-                    ]
-                },
-                {
                     "tagName": "minecraft:has_structure/village_desert",
                     "entries": [
                         5
+                    ]
+                },
+                {
+                    "tagName": "minecraft:has_structure/village_snowy",
+                    "entries": [
+                        3
                     ]
                 },
                 {
@@ -220,17 +220,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:is_forest",
-                    "entries": [
-                        7,
-                        8,
-                        9,
-                        11,
-                        10,
-                        29
-                    ]
-                },
-                {
                     "tagName": "minecraft:is_ocean",
                     "entries": [
                         47,
@@ -242,6 +231,17 @@ let PacketData = {
                         44,
                         40,
                         39
+                    ]
+                },
+                {
+                    "tagName": "minecraft:is_forest",
+                    "entries": [
+                        7,
+                        8,
+                        9,
+                        11,
+                        10,
+                        29
                     ]
                 },
                 {
@@ -259,23 +259,17 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:has_structure/ruined_portal_jungle",
-                    "entries": [
-                        24,
-                        22,
-                        23
-                    ]
-                },
-                {
                     "tagName": "minecraft:has_structure/village_taiga",
                     "entries": [
                         14
                     ]
                 },
                 {
-                    "tagName": "minecraft:has_structure/nether_fossil",
+                    "tagName": "minecraft:has_structure/ruined_portal_jungle",
                     "entries": [
-                        54
+                        24,
+                        22,
+                        23
                     ]
                 },
                 {
@@ -285,10 +279,9 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:has_structure/village_plains",
+                    "tagName": "minecraft:has_structure/nether_fossil",
                     "entries": [
-                        1,
-                        28
+                        54
                     ]
                 },
                 {
@@ -306,17 +299,17 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:has_structure/village_plains",
+                    "entries": [
+                        1,
+                        28
+                    ]
+                },
+                {
                     "tagName": "minecraft:has_structure/buried_treasure",
                     "entries": [
                         36,
                         37
-                    ]
-                },
-                {
-                    "tagName": "minecraft:has_structure/end_city",
-                    "entries": [
-                        57,
-                        58
                     ]
                 },
                 {
@@ -328,6 +321,13 @@ let PacketData = {
                         47,
                         45,
                         43
+                    ]
+                },
+                {
+                    "tagName": "minecraft:has_structure/end_city",
+                    "entries": [
+                        57,
+                        58
                     ]
                 },
                 {
@@ -390,6 +390,12 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:has_structure/ruined_portal_desert",
+                    "entries": [
+                        5
+                    ]
+                },
+                {
                     "tagName": "minecraft:has_structure/mineshaft_mesa",
                     "entries": [
                         25,
@@ -398,15 +404,18 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:has_structure/ruined_portal_desert",
-                    "entries": [
-                        5
-                    ]
-                },
-                {
                     "tagName": "minecraft:has_structure/ruined_portal_swamp",
                     "entries": [
                         6
+                    ]
+                },
+                {
+                    "tagName": "minecraft:has_structure/bastion_remnant",
+                    "entries": [
+                        53,
+                        51,
+                        54,
+                        52
                     ]
                 },
                 {
@@ -421,15 +430,6 @@ let PacketData = {
                         44,
                         40,
                         39
-                    ]
-                },
-                {
-                    "tagName": "minecraft:has_structure/bastion_remnant",
-                    "entries": [
-                        53,
-                        51,
-                        54,
-                        52
                     ]
                 },
                 {
@@ -477,17 +477,17 @@ let PacketData = {
             "tagType": "minecraft:block",
             "tags": [
                 {
-                    "tagName": "minecraft:campfires",
-                    "entries": [
-                        694,
-                        695
-                    ]
-                },
-                {
                     "tagName": "minecraft:soul_fire_base_blocks",
                     "entries": [
                         202,
                         203
+                    ]
+                },
+                {
+                    "tagName": "minecraft:campfires",
+                    "entries": [
+                        694,
+                        695
                     ]
                 },
                 {
@@ -539,6 +539,23 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:replaceable_plants",
+                    "entries": [
+                        101,
+                        102,
+                        103,
+                        257,
+                        258,
+                        424,
+                        425,
+                        426,
+                        427,
+                        428,
+                        429,
+                        869
+                    ]
+                },
+                {
                     "tagName": "minecraft:small_flowers",
                     "entries": [
                         125,
@@ -554,23 +571,6 @@ let PacketData = {
                         135,
                         137,
                         136
-                    ]
-                },
-                {
-                    "tagName": "minecraft:replaceable_plants",
-                    "entries": [
-                        101,
-                        102,
-                        103,
-                        257,
-                        258,
-                        424,
-                        425,
-                        426,
-                        427,
-                        428,
-                        429,
-                        869
                     ]
                 },
                 {
@@ -628,14 +628,13 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:stripped_logs",
+                    "tagName": "minecraft:foxes_spawnable_on",
                     "entries": [
-                        49,
-                        44,
-                        45,
-                        46,
-                        47,
-                        48
+                        8,
+                        192,
+                        194,
+                        11,
+                        10
                     ]
                 },
                 {
@@ -644,16 +643,6 @@ let PacketData = {
                         8,
                         192,
                         194
-                    ]
-                },
-                {
-                    "tagName": "minecraft:foxes_spawnable_on",
-                    "entries": [
-                        8,
-                        192,
-                        194,
-                        11,
-                        10
                     ]
                 },
                 {
@@ -731,13 +720,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:ch_dark_oak_saplings",
-                    "entries": [
-                        43,
-                        24
-                    ]
-                },
-                {
                     "tagName": "minecraft:logs",
                     "entries": [
                         43,
@@ -779,13 +761,6 @@ let PacketData = {
                     "entries": [
                         744,
                         745
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_weeping_vines",
-                    "entries": [
-                        713,
-                        714
                     ]
                 },
                 {
@@ -831,17 +806,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:crops",
-                    "entries": [
-                        511,
-                        319,
-                        320,
-                        159,
-                        256,
-                        255
-                    ]
-                },
-                {
                     "tagName": "minecraft:dragon_immune",
                     "entries": [
                         391,
@@ -863,10 +827,14 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:ch_jungle_saplings",
+                    "tagName": "minecraft:crops",
                     "entries": [
-                        22,
-                        41
+                        511,
+                        319,
+                        320,
+                        159,
+                        256,
+                        255
                     ]
                 },
                 {
@@ -915,16 +883,12 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:standing_signs",
+                    "tagName": "minecraft:warped_stems",
                     "entries": [
-                        162,
-                        163,
-                        164,
-                        165,
-                        166,
-                        167,
-                        736,
-                        737
+                        697,
+                        698,
+                        699,
+                        700
                     ]
                 },
                 {
@@ -936,12 +900,16 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:warped_stems",
+                    "tagName": "minecraft:standing_signs",
                     "entries": [
-                        697,
-                        698,
-                        699,
-                        700
+                        162,
+                        163,
+                        164,
+                        165,
+                        166,
+                        167,
+                        736,
+                        737
                     ]
                 },
                 {
@@ -1074,13 +1042,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:wart_blocks",
-                    "entries": [
-                        518,
-                        703
-                    ]
-                },
-                {
                     "tagName": "minecraft:terracotta",
                     "entries": [
                         421,
@@ -1100,6 +1061,13 @@ let PacketData = {
                         369,
                         370,
                         371
+                    ]
+                },
+                {
+                    "tagName": "minecraft:wart_blocks",
+                    "entries": [
+                        518,
+                        703
                     ]
                 },
                 {
@@ -1260,20 +1228,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:ch_melon_stems",
-                    "entries": [
-                        256,
-                        254
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_bamboos",
-                    "entries": [
-                        636,
-                        635
-                    ]
-                },
-                {
                     "tagName": "minecraft:anvil",
                     "entries": [
                         339,
@@ -1288,6 +1242,13 @@ let PacketData = {
                         52,
                         45,
                         58
+                    ]
+                },
+                {
+                    "tagName": "minecraft:lapis_ores",
+                    "entries": [
+                        73,
+                        74
                     ]
                 },
                 {
@@ -1308,13 +1269,6 @@ let PacketData = {
                         262,
                         870,
                         865
-                    ]
-                },
-                {
-                    "tagName": "minecraft:lapis_ores",
-                    "entries": [
-                        73,
-                        74
                     ]
                 },
                 {
@@ -1396,13 +1350,6 @@ let PacketData = {
                         91,
                         81,
                         85
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_birch_saplings",
-                    "entries": [
-                        21,
-                        40
                     ]
                 },
                 {
@@ -1787,6 +1734,15 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:oak_logs",
+                    "entries": [
+                        38,
+                        50,
+                        49,
+                        56
+                    ]
+                },
+                {
                     "tagName": "minecraft:unstable_bottom_center",
                     "entries": [
                         492,
@@ -1797,22 +1753,6 @@ let PacketData = {
                         489,
                         728,
                         729
-                    ]
-                },
-                {
-                    "tagName": "minecraft:oak_logs",
-                    "entries": [
-                        38,
-                        50,
-                        49,
-                        56
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_oak_saplings",
-                    "entries": [
-                        19,
-                        38
                     ]
                 },
                 {
@@ -1869,169 +1809,6 @@ let PacketData = {
                         702,
                         701,
                         704
-                    ]
-                },
-                {
-                    "tagName": "minecraft:non_underwater_blocks",
-                    "entries": [
-                        0,
-                        639,
-                        638,
-                        100,
-                        607,
-                        608,
-                        609,
-                        610,
-                        611,
-                        602,
-                        603,
-                        604,
-                        605,
-                        606,
-                        617,
-                        618,
-                        619,
-                        620,
-                        621,
-                        627,
-                        628,
-                        629,
-                        630,
-                        631,
-                        612,
-                        613,
-                        614,
-                        615,
-                        616,
-                        622,
-                        623,
-                        624,
-                        625,
-                        626,
-                        149,
-                        27,
-                        209,
-                        511,
-                        319,
-                        103,
-                        102,
-                        429,
-                        125,
-                        126,
-                        127,
-                        128,
-                        129,
-                        130,
-                        131,
-                        132,
-                        133,
-                        134,
-                        424,
-                        426,
-                        427,
-                        425,
-                        101,
-                        428,
-                        256,
-                        139,
-                        138,
-                        267,
-                        320,
-                        255,
-                        19,
-                        20,
-                        21,
-                        22,
-                        23,
-                        24,
-                        197,
-                        257,
-                        159,
-                        430,
-                        431,
-                        432,
-                        433,
-                        434,
-                        435,
-                        436,
-                        437,
-                        438,
-                        439,
-                        440,
-                        441,
-                        442,
-                        443,
-                        444,
-                        445,
-                        405,
-                        406,
-                        407,
-                        408,
-                        409,
-                        410,
-                        411,
-                        412,
-                        413,
-                        414,
-                        415,
-                        416,
-                        417,
-                        418,
-                        419,
-                        420,
-                        169,
-                        269,
-                        632,
-                        162,
-                        163,
-                        164,
-                        166,
-                        165,
-                        167,
-                        172,
-                        173,
-                        174,
-                        176,
-                        175,
-                        177,
-                        147,
-                        321,
-                        322,
-                        323,
-                        324,
-                        325,
-                        326,
-                        191,
-                        178,
-                        181,
-                        182,
-                        183,
-                        184,
-                        185,
-                        186,
-                        179,
-                        344,
-                        343,
-                        170,
-                        97,
-                        98,
-                        354,
-                        154,
-                        345,
-                        213,
-                        189,
-                        285,
-                        284,
-                        521,
-                        504,
-                        636,
-                        635,
-                        135,
-                        137,
-                        136,
-                        692,
-                        680,
-                        696
                     ]
                 },
                 {
@@ -2139,13 +1916,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:ch_pumpkin_stems",
-                    "entries": [
-                        255,
-                        253
-                    ]
-                },
-                {
                     "tagName": "minecraft:wall_post_override",
                     "entries": [
                         147,
@@ -2246,13 +2016,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:ch_spruce_saplings",
-                    "entries": [
-                        20,
-                        39
-                    ]
-                },
-                {
                     "tagName": "minecraft:cauldrons",
                     "entries": [
                         270,
@@ -2308,15 +2071,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:spruce_logs",
-                    "entries": [
-                        39,
-                        51,
-                        44,
-                        57
-                    ]
-                },
-                {
                     "tagName": "minecraft:signs",
                     "entries": [
                         162,
@@ -2338,6 +2092,15 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:spruce_logs",
+                    "entries": [
+                        39,
+                        51,
+                        44,
+                        57
+                    ]
+                },
+                {
                     "tagName": "minecraft:wooden_stairs",
                     "entries": [
                         152,
@@ -2348,17 +2111,6 @@ let PacketData = {
                         389,
                         730,
                         731
-                    ]
-                },
-                {
-                    "tagName": "minecraft:base_stone_overworld",
-                    "entries": [
-                        1,
-                        2,
-                        4,
-                        6,
-                        817,
-                        871
                     ]
                 },
                 {
@@ -2380,6 +2132,17 @@ let PacketData = {
                         418,
                         419,
                         420
+                    ]
+                },
+                {
+                    "tagName": "minecraft:base_stone_overworld",
+                    "entries": [
+                        1,
+                        2,
+                        4,
+                        6,
+                        817,
+                        871
                     ]
                 },
                 {
@@ -2420,21 +2183,21 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:hoglin_repellents",
-                    "entries": [
-                        702,
-                        753,
-                        209,
-                        751
-                    ]
-                },
-                {
                     "tagName": "minecraft:stone_bricks",
                     "entries": [
                         236,
                         237,
                         238,
                         239
+                    ]
+                },
+                {
+                    "tagName": "minecraft:hoglin_repellents",
+                    "entries": [
+                        702,
+                        753,
+                        209,
+                        751
                     ]
                 },
                 {
@@ -2675,14 +2438,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:base_stone_nether",
-                    "entries": [
-                        201,
-                        204,
-                        757
-                    ]
-                },
-                {
                     "tagName": "minecraft:needs_diamond_tool",
                     "entries": [
                         146,
@@ -2693,21 +2448,11 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:underwater_blocks",
+                    "tagName": "minecraft:base_stone_nether",
                     "entries": [
-                        26,
-                        588,
-                        589,
-                        104,
-                        105,
-                        640
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_crimson_fungus",
-                    "entries": [
-                        711,
-                        706
+                        201,
+                        204,
+                        757
                     ]
                 },
                 {
@@ -2721,13 +2466,6 @@ let PacketData = {
                         177,
                         738,
                         739
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_twisting_vines",
-                    "entries": [
-                        715,
-                        716
                     ]
                 },
                 {
@@ -2872,6 +2610,13 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:redstone_ores",
+                    "entries": [
+                        187,
+                        188
+                    ]
+                },
+                {
                     "tagName": "minecraft:trapdoors",
                     "entries": [
                         234,
@@ -2883,13 +2628,6 @@ let PacketData = {
                         726,
                         727,
                         393
-                    ]
-                },
-                {
-                    "tagName": "minecraft:redstone_ores",
-                    "entries": [
-                        187,
-                        188
                     ]
                 },
                 {
@@ -2909,18 +2647,18 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:buttons",
+                    "tagName": "minecraft:corals",
                     "entries": [
-                        321,
-                        322,
-                        323,
-                        324,
-                        325,
-                        326,
-                        732,
-                        733,
-                        191,
-                        772
+                        607,
+                        608,
+                        609,
+                        610,
+                        611,
+                        617,
+                        618,
+                        619,
+                        620,
+                        621
                     ]
                 },
                 {
@@ -2948,18 +2686,18 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:corals",
+                    "tagName": "minecraft:buttons",
                     "entries": [
-                        607,
-                        608,
-                        609,
-                        610,
-                        611,
-                        617,
-                        618,
-                        619,
-                        620,
-                        621
+                        321,
+                        322,
+                        323,
+                        324,
+                        325,
+                        326,
+                        732,
+                        733,
+                        191,
+                        772
                     ]
                 },
                 {
@@ -2969,14 +2707,6 @@ let PacketData = {
                         192,
                         194,
                         28
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_dripleaves",
-                    "entries": [
-                        868,
-                        866,
-                        867
                     ]
                 },
                 {
@@ -2990,13 +2720,6 @@ let PacketData = {
                         18,
                         718,
                         719
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_kelps",
-                    "entries": [
-                        588,
-                        589
                     ]
                 },
                 {
@@ -3080,6 +2803,13 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:cave_vines",
+                    "entries": [
+                        860,
+                        859
+                    ]
+                },
+                {
                     "tagName": "minecraft:coral_blocks",
                     "entries": [
                         597,
@@ -3087,13 +2817,6 @@ let PacketData = {
                         599,
                         600,
                         601
-                    ]
-                },
-                {
-                    "tagName": "minecraft:cave_vines",
-                    "entries": [
-                        860,
-                        859
                     ]
                 },
                 {
@@ -3130,6 +2853,19 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:wooden_pressure_plates",
+                    "entries": [
+                        181,
+                        182,
+                        183,
+                        184,
+                        185,
+                        186,
+                        722,
+                        723
+                    ]
+                },
+                {
                     "tagName": "minecraft:wither_immune",
                     "entries": [
                         391,
@@ -3146,32 +2882,12 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:wooden_pressure_plates",
-                    "entries": [
-                        181,
-                        182,
-                        183,
-                        184,
-                        185,
-                        186,
-                        722,
-                        723
-                    ]
-                },
-                {
                     "tagName": "minecraft:acacia_logs",
                     "entries": [
                         42,
                         54,
                         47,
                         60
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_acacia_saplings",
-                    "entries": [
-                        23,
-                        42
                     ]
                 },
                 {
@@ -3203,24 +2919,6 @@ let PacketData = {
                         425,
                         427,
                         426
-                    ]
-                },
-                {
-                    "tagName": "minecraft:stripped_wood",
-                    "entries": [
-                        56,
-                        57,
-                        58,
-                        59,
-                        60,
-                        61
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_warped_fungus",
-                    "entries": [
-                        702,
-                        697
                     ]
                 },
                 {
@@ -3275,24 +2973,10 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:waxed_copper_blocks",
+                    "tagName": "minecraft:sand",
                     "entries": [
-                        840,
-                        842,
-                        841,
-                        843,
-                        847,
-                        846,
-                        845,
-                        844,
-                        851,
-                        850,
-                        849,
-                        848,
-                        855,
-                        854,
-                        853,
-                        852
+                        28,
+                        29
                     ]
                 },
                 {
@@ -3315,20 +2999,6 @@ let PacketData = {
                     "entries": [
                         710,
                         701
-                    ]
-                },
-                {
-                    "tagName": "minecraft:sand",
-                    "entries": [
-                        28,
-                        29
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:ch_cave_vines",
-                    "entries": [
-                        860,
-                        859
                     ]
                 },
                 {
@@ -3456,21 +3126,19 @@ let PacketData = {
             "tagType": "minecraft:entity_type",
             "tags": [
                 {
-                    "tagName": "minecraft:zombies",
-                    "entries": [
-                        107,
-                        109,
-                        38,
-                        17,
-                        110
-                    ]
-                },
-                {
                     "tagName": "minecraft:axolotl_always_hostiles",
                     "entries": [
                         17,
                         35,
                         18
+                    ]
+                },
+                {
+                    "tagName": "minecraft:freeze_hurts_extra_types",
+                    "entries": [
+                        88,
+                        6,
+                        48
                     ]
                 },
                 {
@@ -3480,28 +3148,6 @@ let PacketData = {
                         68,
                         82,
                         102
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:spiders",
-                    "entries": [
-                        85,
-                        9
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:horses",
-                    "entries": [
-                        37,
-                        15,
-                        57
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:piglins",
-                    "entries": [
-                        65,
-                        66
                     ]
                 },
                 {
@@ -3525,68 +3171,11 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:cj_rideables",
-                    "entries": [
-                        107,
-                        109,
-                        38,
-                        17,
-                        110
-                    ]
-                },
-                {
                     "tagName": "minecraft:skeletons",
                     "entries": [
                         78,
                         87,
                         103
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:llamas",
-                    "entries": [
-                        46,
-                        94
-                    ]
-                },
-                {
-                    "tagName": "minecraft:arrows",
-                    "entries": [
-                        2,
-                        84
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:player_rideables",
-                    "entries": [
-                        64,
-                        37,
-                        15,
-                        57,
-                        108,
-                        79,
-                        46,
-                        94,
-                        88,
-                        7,
-                        50
-                    ]
-                },
-                {
-                    "tagName": "minecraft:freeze_hurts_extra_types",
-                    "entries": [
-                        88,
-                        6,
-                        48
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:overworld_zombies",
-                    "entries": [
-                        107,
-                        109,
-                        38,
-                        17
                     ]
                 },
                 {
@@ -3619,6 +3208,13 @@ let PacketData = {
                         86,
                         33
                     ]
+                },
+                {
+                    "tagName": "minecraft:arrows",
+                    "entries": [
+                        2,
+                        84
+                    ]
                 }
             ]
         },
@@ -3626,10 +3222,60 @@ let PacketData = {
             "tagType": "minecraft:item",
             "tags": [
                 {
+                    "tagName": "minecraft:banners",
+                    "entries": [
+                        982,
+                        983,
+                        984,
+                        985,
+                        986,
+                        987,
+                        988,
+                        989,
+                        990,
+                        991,
+                        992,
+                        993,
+                        994,
+                        995,
+                        996,
+                        997
+                    ]
+                },
+                {
                     "tagName": "minecraft:soul_fire_base_blocks",
                     "entries": [
                         269,
                         270
+                    ]
+                },
+                {
+                    "tagName": "minecraft:stone_crafting_materials",
+                    "entries": [
+                        21,
+                        1066,
+                        9
+                    ]
+                },
+                {
+                    "tagName": "minecraft:wooden_fences",
+                    "entries": [
+                        257,
+                        261,
+                        262,
+                        258,
+                        259,
+                        260,
+                        263,
+                        264
+                    ]
+                },
+                {
+                    "tagName": "minecraft:piglin_repellents",
+                    "entries": [
+                        274,
+                        1053,
+                        1057
                     ]
                 },
                 {
@@ -3640,13 +3286,6 @@ let PacketData = {
                         686,
                         696,
                         692
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:poison_cures",
-                    "entries": [
-                        782,
-                        1062
                     ]
                 },
                 {
@@ -3722,16 +3361,94 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:master_hoes",
+                    "tagName": "minecraft:jungle_logs",
                     "entries": [
-                        723,
-                        728
+                        104,
+                        128,
+                        112,
+                        120
+                    ]
+                },
+                {
+                    "tagName": "minecraft:lectern_books",
+                    "entries": [
+                        943,
+                        942
+                    ]
+                },
+                {
+                    "tagName": "minecraft:signs",
+                    "entries": [
+                        768,
+                        769,
+                        770,
+                        772,
+                        771,
+                        773,
+                        774,
+                        775
+                    ]
+                },
+                {
+                    "tagName": "minecraft:spruce_logs",
+                    "entries": [
+                        102,
+                        126,
+                        110,
+                        118
+                    ]
+                },
+                {
+                    "tagName": "minecraft:wooden_stairs",
+                    "entries": [
+                        244,
+                        318,
+                        319,
+                        320,
+                        391,
+                        392,
+                        321,
+                        322
                     ]
                 },
                 {
                     "tagName": "minecraft:axolotl_tempt_items",
                     "entries": [
                         786
+                    ]
+                },
+                {
+                    "tagName": "minecraft:carpets",
+                    "entries": [
+                        373,
+                        374,
+                        375,
+                        376,
+                        377,
+                        378,
+                        379,
+                        380,
+                        381,
+                        382,
+                        383,
+                        384,
+                        385,
+                        386,
+                        387,
+                        388
+                    ]
+                },
+                {
+                    "tagName": "minecraft:wooden_buttons",
+                    "entries": [
+                        611,
+                        612,
+                        613,
+                        614,
+                        615,
+                        616,
+                        617,
+                        618
                     ]
                 },
                 {
@@ -3809,10 +3526,14 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:master_chestplates",
+                    "tagName": "minecraft:fishes",
                     "entries": [
-                        751,
-                        759
+                        801,
+                        805,
+                        802,
+                        806,
+                        804,
+                        803
                     ]
                 },
                 {
@@ -3853,6 +3574,15 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:stone_bricks",
+                    "entries": [
+                        283,
+                        284,
+                        285,
+                        286
+                    ]
+                },
+                {
                     "tagName": "minecraft:creeper_drop_music_discs",
                     "entries": [
                         1015,
@@ -3870,506 +3600,11 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:ocelot_feedable",
-                    "entries": [
-                        801,
-                        802
-                    ]
-                },
-                {
                     "tagName": "minecraft:arrows",
                     "entries": [
                         683,
                         1007,
                         1006
-                    ]
-                },
-                {
-                    "tagName": "minecraft:wooden_doors",
-                    "entries": [
-                        632,
-                        633,
-                        634,
-                        635,
-                        636,
-                        637,
-                        638,
-                        639
-                    ]
-                },
-                {
-                    "tagName": "minecraft:warped_stems",
-                    "entries": [
-                        108,
-                        116,
-                        132,
-                        124
-                    ]
-                },
-                {
-                    "tagName": "minecraft:emerald_ores",
-                    "entries": [
-                        50,
-                        51
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:master_pickaxes",
-                    "entries": [
-                        721,
-                        726
-                    ]
-                },
-                {
-                    "tagName": "minecraft:crimson_stems",
-                    "entries": [
-                        107,
-                        115,
-                        131,
-                        123
-                    ]
-                },
-                {
-                    "tagName": "minecraft:ignored_by_piglin_babies",
-                    "entries": [
-                        781
-                    ]
-                },
-                {
-                    "tagName": "minecraft:swords",
-                    "entries": [
-                        699,
-                        704,
-                        714,
-                        709,
-                        719,
-                        724
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:master_axes",
-                    "entries": [
-                        722,
-                        727
-                    ]
-                },
-                {
-                    "tagName": "minecraft:stone_tool_materials",
-                    "entries": [
-                        21,
-                        1066,
-                        9
-                    ]
-                },
-                {
-                    "tagName": "minecraft:terracotta",
-                    "entries": [
-                        389,
-                        354,
-                        355,
-                        356,
-                        357,
-                        358,
-                        359,
-                        360,
-                        361,
-                        362,
-                        363,
-                        364,
-                        365,
-                        366,
-                        367,
-                        368,
-                        369
-                    ]
-                },
-                {
-                    "tagName": "minecraft:dark_oak_logs",
-                    "entries": [
-                        106,
-                        130,
-                        114,
-                        122
-                    ]
-                },
-                {
-                    "tagName": "minecraft:non_flammable_wood",
-                    "entries": [
-                        108,
-                        116,
-                        132,
-                        124,
-                        107,
-                        115,
-                        131,
-                        123,
-                        28,
-                        29,
-                        210,
-                        211,
-                        629,
-                        630,
-                        263,
-                        264,
-                        647,
-                        648,
-                        655,
-                        656,
-                        321,
-                        322,
-                        617,
-                        618,
-                        638,
-                        639,
-                        774,
-                        775
-                    ]
-                },
-                {
-                    "tagName": "minecraft:coals",
-                    "entries": [
-                        684,
-                        685
-                    ]
-                },
-                {
-                    "tagName": "minecraft:piglin_food",
-                    "entries": [
-                        763,
-                        764
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:dolphin_feedable",
-                    "entries": [
-                        801,
-                        802
-                    ]
-                },
-                {
-                    "tagName": "minecraft:shulker_boxes",
-                    "entries": [
-                        451,
-                        452,
-                        453,
-                        454,
-                        455,
-                        456,
-                        457,
-                        458,
-                        459,
-                        460,
-                        461,
-                        462,
-                        463,
-                        464,
-                        465,
-                        466,
-                        467
-                    ]
-                },
-                {
-                    "tagName": "minecraft:anvil",
-                    "entries": [
-                        346,
-                        347,
-                        348
-                    ]
-                },
-                {
-                    "tagName": "minecraft:birch_logs",
-                    "entries": [
-                        103,
-                        127,
-                        111,
-                        119
-                    ]
-                },
-                {
-                    "tagName": "minecraft:axes",
-                    "entries": [
-                        702,
-                        707,
-                        717,
-                        712,
-                        722,
-                        727
-                    ]
-                },
-                {
-                    "tagName": "minecraft:lapis_ores",
-                    "entries": [
-                        52,
-                        53
-                    ]
-                },
-                {
-                    "tagName": "minecraft:hoes",
-                    "entries": [
-                        703,
-                        708,
-                        718,
-                        713,
-                        723,
-                        728
-                    ]
-                },
-                {
-                    "tagName": "minecraft:fences",
-                    "entries": [
-                        257,
-                        261,
-                        262,
-                        258,
-                        259,
-                        260,
-                        263,
-                        264,
-                        308
-                    ]
-                },
-                {
-                    "tagName": "minecraft:saplings",
-                    "entries": [
-                        30,
-                        31,
-                        32,
-                        33,
-                        34,
-                        35,
-                        152,
-                        153
-                    ]
-                },
-                {
-                    "tagName": "minecraft:beds",
-                    "entries": [
-                        844,
-                        845,
-                        841,
-                        842,
-                        839,
-                        837,
-                        843,
-                        833,
-                        838,
-                        835,
-                        832,
-                        831,
-                        836,
-                        840,
-                        830,
-                        834
-                    ]
-                },
-                {
-                    "tagName": "minecraft:iron_ores",
-                    "entries": [
-                        42,
-                        43
-                    ]
-                },
-                {
-                    "tagName": "minecraft:oak_logs",
-                    "entries": [
-                        101,
-                        125,
-                        109,
-                        117
-                    ]
-                },
-                {
-                    "tagName": "minecraft:doors",
-                    "entries": [
-                        632,
-                        633,
-                        634,
-                        635,
-                        636,
-                        637,
-                        638,
-                        639,
-                        631
-                    ]
-                },
-                {
-                    "tagName": "minecraft:banners",
-                    "entries": [
-                        982,
-                        983,
-                        984,
-                        985,
-                        986,
-                        987,
-                        988,
-                        989,
-                        990,
-                        991,
-                        992,
-                        993,
-                        994,
-                        995,
-                        996,
-                        997
-                    ]
-                },
-                {
-                    "tagName": "minecraft:stone_crafting_materials",
-                    "entries": [
-                        21,
-                        1066,
-                        9
-                    ]
-                },
-                {
-                    "tagName": "minecraft:wooden_fences",
-                    "entries": [
-                        257,
-                        261,
-                        262,
-                        258,
-                        259,
-                        260,
-                        263,
-                        264
-                    ]
-                },
-                {
-                    "tagName": "minecraft:piglin_repellents",
-                    "entries": [
-                        274,
-                        1053,
-                        1057
-                    ]
-                },
-                {
-                    "tagName": "minecraft:jungle_logs",
-                    "entries": [
-                        104,
-                        128,
-                        112,
-                        120
-                    ]
-                },
-                {
-                    "tagName": "minecraft:lectern_books",
-                    "entries": [
-                        943,
-                        942
-                    ]
-                },
-                {
-                    "tagName": "minecraft:wooden_stairs",
-                    "entries": [
-                        244,
-                        318,
-                        319,
-                        320,
-                        391,
-                        392,
-                        321,
-                        322
-                    ]
-                },
-                {
-                    "tagName": "minecraft:spruce_logs",
-                    "entries": [
-                        102,
-                        126,
-                        110,
-                        118
-                    ]
-                },
-                {
-                    "tagName": "minecraft:signs",
-                    "entries": [
-                        768,
-                        769,
-                        770,
-                        772,
-                        771,
-                        773,
-                        774,
-                        775
-                    ]
-                },
-                {
-                    "tagName": "minecraft:carpets",
-                    "entries": [
-                        373,
-                        374,
-                        375,
-                        376,
-                        377,
-                        378,
-                        379,
-                        380,
-                        381,
-                        382,
-                        383,
-                        384,
-                        385,
-                        386,
-                        387,
-                        388
-                    ]
-                },
-                {
-                    "tagName": "minecraft:wooden_buttons",
-                    "entries": [
-                        611,
-                        612,
-                        613,
-                        614,
-                        615,
-                        616,
-                        617,
-                        618
-                    ]
-                },
-                {
-                    "tagName": "minecraft:fishes",
-                    "entries": [
-                        801,
-                        805,
-                        802,
-                        806,
-                        804,
-                        803
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:master_boots",
-                    "entries": [
-                        753,
-                        761
-                    ]
-                },
-                {
-                    "tagName": "minecraft:stone_bricks",
-                    "entries": [
-                        283,
-                        284,
-                        285,
-                        286
-                    ]
-                },
-                {
-                    "tagName": "minecraft:shovels",
-                    "entries": [
-                        700,
-                        705,
-                        715,
-                        710,
-                        720,
-                        725
-                    ]
-                },
-                {
-                    "tagName": "minecraft:nether_fungus",
-                    "entries": [
-                        189,
-                        190
                     ]
                 },
                 {
@@ -4430,17 +3665,39 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:master_shovels",
+                    "tagName": "minecraft:wooden_doors",
                     "entries": [
-                        720,
-                        725
+                        632,
+                        633,
+                        634,
+                        635,
+                        636,
+                        637,
+                        638,
+                        639
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:axolotl_feedable",
+                    "tagName": "minecraft:warped_stems",
                     "entries": [
-                        803,
-                        786
+                        108,
+                        116,
+                        132,
+                        124
+                    ]
+                },
+                {
+                    "tagName": "minecraft:emerald_ores",
+                    "entries": [
+                        50,
+                        51
+                    ]
+                },
+                {
+                    "tagName": "minecraft:redstone_ores",
+                    "entries": [
+                        48,
+                        49
                     ]
                 },
                 {
@@ -4458,10 +3715,18 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:redstone_ores",
+                    "tagName": "minecraft:crimson_stems",
                     "entries": [
-                        48,
-                        49
+                        107,
+                        115,
+                        131,
+                        123
+                    ]
+                },
+                {
+                    "tagName": "minecraft:ignored_by_piglin_babies",
+                    "entries": [
+                        781
                     ]
                 },
                 {
@@ -4504,6 +3769,36 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:stone_tool_materials",
+                    "entries": [
+                        21,
+                        1066,
+                        9
+                    ]
+                },
+                {
+                    "tagName": "minecraft:terracotta",
+                    "entries": [
+                        389,
+                        354,
+                        355,
+                        356,
+                        357,
+                        358,
+                        359,
+                        360,
+                        361,
+                        362,
+                        363,
+                        364,
+                        365,
+                        366,
+                        367,
+                        368,
+                        369
+                    ]
+                },
+                {
                     "tagName": "minecraft:planks",
                     "entries": [
                         22,
@@ -4535,6 +3830,15 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:dark_oak_logs",
+                    "entries": [
+                        106,
+                        130,
+                        114,
+                        122
+                    ]
+                },
+                {
                     "tagName": "minecraft:rails",
                     "entries": [
                         659,
@@ -4551,6 +3855,39 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:non_flammable_wood",
+                    "entries": [
+                        108,
+                        116,
+                        132,
+                        124,
+                        107,
+                        115,
+                        131,
+                        123,
+                        28,
+                        29,
+                        210,
+                        211,
+                        629,
+                        630,
+                        263,
+                        264,
+                        647,
+                        648,
+                        655,
+                        656,
+                        321,
+                        322,
+                        617,
+                        618,
+                        638,
+                        639,
+                        774,
+                        775
+                    ]
+                },
+                {
                     "tagName": "minecraft:leaves",
                     "entries": [
                         136,
@@ -4561,6 +3898,13 @@ let PacketData = {
                         135,
                         139,
                         140
+                    ]
+                },
+                {
+                    "tagName": "minecraft:coals",
+                    "entries": [
+                        684,
+                        685
                     ]
                 },
                 {
@@ -4590,17 +3934,10 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:master_leggings",
+                    "tagName": "minecraft:piglin_food",
                     "entries": [
-                        752,
-                        760
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:candle_lightables",
-                    "entries": [
-                        680,
-                        941
+                        763,
+                        764
                     ]
                 },
                 {
@@ -4623,6 +3960,36 @@ let PacketData = {
                         129,
                         113,
                         121
+                    ]
+                },
+                {
+                    "tagName": "minecraft:candles",
+                    "entries": [
+                        1079,
+                        1080,
+                        1081,
+                        1082,
+                        1083,
+                        1084,
+                        1085,
+                        1086,
+                        1087,
+                        1088,
+                        1089,
+                        1090,
+                        1091,
+                        1092,
+                        1093,
+                        1094,
+                        1095
+                    ]
+                },
+                {
+                    "tagName": "minecraft:anvil",
+                    "entries": [
+                        346,
+                        347,
+                        348
                     ]
                 },
                 {
@@ -4656,28 +4023,6 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:candles",
-                    "entries": [
-                        1079,
-                        1080,
-                        1081,
-                        1082,
-                        1083,
-                        1084,
-                        1085,
-                        1086,
-                        1087,
-                        1088,
-                        1089,
-                        1090,
-                        1091,
-                        1092,
-                        1093,
-                        1094,
-                        1095
-                    ]
-                },
-                {
                     "tagName": "minecraft:music_discs",
                     "entries": [
                         1015,
@@ -4706,39 +4051,19 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:master_swords",
+                    "tagName": "minecraft:birch_logs",
                     "entries": [
-                        719,
-                        724
+                        103,
+                        127,
+                        111,
+                        119
                     ]
                 },
                 {
-                    "tagName": "minecraft:leather_armor",
+                    "tagName": "minecraft:lapis_ores",
                     "entries": [
-                        738,
-                        739,
-                        740,
-                        741
-                    ]
-                },
-                {
-                    "tagName": "minecraft:nether_stems",
-                    "entries": [
-                        107,
-                        115,
-                        131,
-                        123,
-                        108,
-                        116,
-                        132,
-                        124
-                    ]
-                },
-                {
-                    "tagName": "minecraft:sand",
-                    "entries": [
-                        37,
-                        38
+                        52,
+                        53
                     ]
                 },
                 {
@@ -4749,20 +4074,10 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:waxed_copper_blocks",
+                    "tagName": "minecraft:sand",
                     "entries": [
-                        85,
-                        86,
-                        87,
-                        89,
-                        90,
-                        91,
-                        93,
-                        94,
-                        95,
-                        97,
-                        98,
-                        99
+                        37,
+                        38
                     ]
                 },
                 {
@@ -4771,20 +4086,6 @@ let PacketData = {
                         46,
                         56,
                         47
-                    ]
-                },
-                {
-                    "tagName": "minecraft:nether_roots",
-                    "entries": [
-                        191,
-                        192
-                    ]
-                },
-                {
-                    "tagName": "blazeandcave:master_helmets",
-                    "entries": [
-                        750,
-                        758
                     ]
                 },
                 {
@@ -4798,14 +4099,17 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "blazeandcave:axes",
+                    "tagName": "minecraft:fences",
                     "entries": [
-                        702,
-                        707,
-                        717,
-                        712,
-                        722,
-                        727
+                        257,
+                        261,
+                        262,
+                        258,
+                        259,
+                        260,
+                        263,
+                        264,
+                        308
                     ]
                 },
                 {
@@ -4838,6 +4142,19 @@ let PacketData = {
                     ]
                 },
                 {
+                    "tagName": "minecraft:saplings",
+                    "entries": [
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        152,
+                        153
+                    ]
+                },
+                {
                     "tagName": "minecraft:dirt",
                     "entries": [
                         15,
@@ -4850,14 +4167,54 @@ let PacketData = {
                     ]
                 },
                 {
-                    "tagName": "minecraft:pickaxes",
+                    "tagName": "minecraft:beds",
                     "entries": [
-                        701,
-                        706,
-                        716,
-                        711,
-                        721,
-                        726
+                        844,
+                        845,
+                        841,
+                        842,
+                        839,
+                        837,
+                        843,
+                        833,
+                        838,
+                        835,
+                        832,
+                        831,
+                        836,
+                        840,
+                        830,
+                        834
+                    ]
+                },
+                {
+                    "tagName": "minecraft:iron_ores",
+                    "entries": [
+                        42,
+                        43
+                    ]
+                },
+                {
+                    "tagName": "minecraft:oak_logs",
+                    "entries": [
+                        101,
+                        125,
+                        109,
+                        117
+                    ]
+                },
+                {
+                    "tagName": "minecraft:doors",
+                    "entries": [
+                        632,
+                        633,
+                        634,
+                        635,
+                        636,
+                        637,
+                        638,
+                        639,
+                        631
                     ]
                 },
                 {

@@ -3,23 +3,22 @@
  * State: PLAY
  * Normalized Name: Advancements
  * Minecraft Version: 1.18.2
- * ISO Creation Date: 2022-08-31T16:07:27.885Z
- * Creation Date: Wed Aug 31 2022 18:07:27 GMT+0200 (Central European Summer Time)
+ * ISO Creation Date: 2022-08-31T23:01:00.632Z
+ * Creation Date: Thu Sep 01 2022 01:01:00 GMT+0200 (Central European Summer Time)
  */
 // Define Default Packet Data
 let PacketData = {
-    "reset": false,
+    "reset": true,
     "advancementMapping": [
         {
-            "key": "blazeandcave:adventure/mapmaker",
+            "key": "adventure:root",
             "value": {
-                "parentId": "blazeandcave:adventure/knowledge_is_power",
                 "displayData": {
-                    "title": "{\"translate\":\"Mapmaker\"}",
-                    "description": "{\"translate\":\"Craft or trade an empty map\"}",
+                    "title": "{\"text\":\"First Advancement\"}",
+                    "description": "{\"text\":\"Description\"}",
                     "icon": {
                         "present": true,
-                        "itemId": 951,
+                        "itemId": 858,
                         "itemCount": 1
                     },
                     "frameType": 0,
@@ -27,101 +26,34 @@ let PacketData = {
                         "_unused": 0,
                         "hidden": 0,
                         "show_toast": 1,
-                        "has_background_texture": 0
+                        "has_background_texture": 1
                     },
-                    "xCord": 4,
-                    "yCord": 15.5
+                    "backgroundTexture": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+                    "xCord": 0,
+                    "yCord": 0.5
                 },
                 "criteria": [
                     {
-                        "key": "map"
+                        "key": "AdvancementTreeRoot"
                     }
                 ],
                 "requirements": [
                     [
-                        "map"
+                        "AdvancementTreeRoot"
                     ]
                 ]
             }
         },
         {
-            "key": "blazeandcave:adventure/knowledge_is_power",
+            "key": "adventure:adv1",
             "value": {
-                "parentId": "minecraft:adventure/trade",
+                "parentId": "adventure:root",
                 "displayData": {
-                    "title": "{\"translate\":\"Knowledge is Power\"}",
-                    "description": "{\"translate\":\"Trade for an Enchanted Book\"}",
+                    "title": "{\"text\":\"Second Advancement\"}",
+                    "description": "{\"text\":\"Description\"}",
                     "icon": {
                         "present": true,
-                        "itemId": 963,
-                        "itemCount": 1
-                    },
-                    "frameType": 0,
-                    "flags": {
-                        "_unused": 0,
-                        "hidden": 0,
-                        "show_toast": 1,
-                        "has_background_texture": 0
-                    },
-                    "xCord": 3,
-                    "yCord": 16
-                },
-                "criteria": [
-                    {
-                        "key": "trade"
-                    }
-                ],
-                "requirements": [
-                    [
-                        "trade"
-                    ]
-                ]
-            }
-        },
-        {
-            "key": "minecraft:adventure/trade",
-            "value": {
-                "parentId": "blazeandcave:adventure/do_you_want_to_trade",
-                "displayData    ": {
-                    "title": "{\"translate\":\"What a Deal!\"}",
-                    "description": "{\"translate\":\"Successfully trade with a Villager\"}",
-                    "icon": {
-                        "present": true,
-                        "itemId": 687,
-                        "itemCount": 1
-                    },
-                    "frameType": 0,
-                    "flags": {
-                        "_unused": 0,
-                        "hidden": 0,
-                        "show_toast": 1,
-                        "has_background_texture": 0
-                    },
-                    "xCord": 2,
-                    "yCord": 12.25
-                },
-                "criteria": [
-                    {
-                        "key": "trade"
-                    }
-                ],
-                "requirements": [
-                    [
-                        "trade"
-                    ]
-                ]
-            }
-        },
-        {
-            "key": "blazeandcave:adventure/do_you_want_to_trade",
-            "value": {
-                "parentId": "minecraft:adventure/root",
-                "displayData": {
-                    "title": "{\"translate\":\"Do You Want to Trade?\"}",
-                    "description": "{\"translate\":\"Find an NPC village\"}",
-                    "icon": {
-                        "present": true,
-                        "itemId": 22,
+                        "itemId": 871,
                         "itemCount": 1
                     },
                     "frameType": 0,
@@ -132,68 +64,30 @@ let PacketData = {
                         "has_background_texture": 0
                     },
                     "xCord": 1,
-                    "yCord": 12.25
+                    "yCord": 0
                 },
                 "criteria": [
                     {
-                        "key": "village"
+                        "key": "AdvancementTreeSecond"
                     }
                 ],
                 "requirements": [
                     [
-                        "village"
+                        "AdvancementTreeSecond"
                     ]
                 ]
             }
         },
         {
-            "key": "minecraft:adventure/root",
+            "key": "adventure:adv2",
             "value": {
+                "parentId": "adventure:adv1",
                 "displayData": {
-                    "title": "{\"translate\":\"Adventure\"}",
-                    "description": "{\"translate\":\"Village, Pillage and Dungeons!\"}",
+                    "title": "{\"text\":\"Last Advancement\"}",
+                    "description": "{\"text\":\"Description\"}",
                     "icon": {
                         "present": true,
-                        "itemId": 951,
-                        "itemCount": 1
-                    },
-                    "frameType": 0,
-                    "flags": {
-                        "_unused": 0,
-                        "hidden": 0,
-                        "show_toast": 0,
-                        "has_background_texture": 1
-                    },
-                    "backgroundTexture": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-                    "xCord": 0,
-                    "yCord": 7.125
-                },
-                "criteria": [
-                    {
-                        "key": "killed_by_something"
-                    },
-                    {
-                        "key": "killed_something"
-                    }
-                ],
-                "requirements": [
-                    [
-                        "killed_something",
-                        "killed_by_something"
-                    ]
-                ]
-            }
-        },
-        {
-            "key": "blazeandcave:adventure/mapmakers_table",
-            "value": {
-                "parentId": "blazeandcave:adventure/mapmaker",
-                "displayData": {
-                    "title": "{\"translate\":\"Mapmaker's Table\"}",
-                    "description": "{\"translate\":\"Craft a cartography table with paper and planks\"}",
-                    "icon": {
-                        "present": true,
-                        "itemId": 1046,
+                        "itemId": 998,
                         "itemCount": 1
                     },
                     "frameType": 0,
@@ -203,31 +97,31 @@ let PacketData = {
                         "show_toast": 1,
                         "has_background_texture": 0
                     },
-                    "xCord": 5,
-                    "yCord": 14.5
+                    "xCord": 2,
+                    "yCord": 0
                 },
                 "criteria": [
                     {
-                        "key": "cartography_table"
+                        "key": "AdvancementTreeLast"
                     }
                 ],
                 "requirements": [
                     [
-                        "cartography_table"
+                        "AdvancementTreeLast"
                     ]
                 ]
             }
         },
         {
-            "key": "blazeandcave:adventure/im_not_lost_anymore",
+            "key": "adventure:adv3",
             "value": {
-                "parentId": "blazeandcave:adventure/mapmakers_table",
+                "parentId": "adventure:root",
                 "displayData": {
-                    "title": "{\"translate\":\"I'm not lost anymore!\"}",
-                    "description": "{\"translate\":\"Right-click a banner with a map\"}",
+                    "title": "{\"text\":\"First Child Advancement\"}",
+                    "description": "{\"text\":\"Description\"}",
                     "icon": {
                         "present": true,
-                        "itemId": 993,
+                        "itemId": 311,
                         "itemCount": 1
                     },
                     "frameType": 0,
@@ -237,119 +131,17 @@ let PacketData = {
                         "show_toast": 1,
                         "has_background_texture": 0
                     },
-                    "xCord": 6,
-                    "yCord": 14.5
+                    "xCord": 1,
+                    "yCord": 1
                 },
                 "criteria": [
                     {
-                        "key": "map"
+                        "key": "AdvancementTreeFirstChild"
                     }
                 ],
                 "requirements": [
                     [
-                        "map"
-                    ]
-                ]
-            }
-        },
-        {
-            "key": "blazeandcave:adventure/treasure_map",
-            "value": {
-                "parentId": "blazeandcave:adventure/mapmaker",
-                "displayData": {
-                    "title": "{\"translate\":\"Treasure Map\"}",
-                    "description": "{\"translate\":\"Trade for an Explorer Map\"}",
-                    "icon": {
-                        "present": true,
-                        "itemId": 847,
-                        "itemCount": 1
-                    },
-                    "frameType": 2,
-                    "flags": {
-                        "_unused": 0,
-                        "hidden": 0,
-                        "show_toast": 1,
-                        "has_background_texture": 0
-                    },
-                    "xCord": 5,
-                    "yCord": 16.5
-                },
-                "criteria": [
-                    {
-                        "key": "trade"
-                    }
-                ],
-                "requirements": [
-                    [
-                        "trade"
-                    ]
-                ]
-            }
-        },
-        {
-            "key": "blazeandcave:adventure/house_of_psychos",
-            "value": {
-                "parentId": "blazeandcave:adventure/treasure_map",
-                "displayData": {
-                    "title": "{\"translate\":\"House of Psychos\"}",
-                    "description": "{\"translate\":\"Find a Woodland Mansion\"}",
-                    "icon": {
-                        "present": true,
-                        "itemId": 637,
-                        "itemCount": 1
-                    },
-                    "frameType": 0,
-                    "flags": {
-                        "_unused": 0,
-                        "hidden": 0,
-                        "show_toast": 1,
-                        "has_background_texture": 0
-                    },
-                    "xCord": 6,
-                    "yCord": 15.5
-                },
-                "criteria": [
-                    {
-                        "key": "mansion"
-                    }
-                ],
-                "requirements": [
-                    [
-                        "mansion"
-                    ]
-                ]
-            }
-        },
-        {
-            "key": "blazeandcave:adventure/monumental",
-            "value": {
-                "parentId": "blazeandcave:adventure/treasure_map",
-                "displayData": {
-                    "title": "{\"translate\":\"Monumental\"}",
-                    "description": "{\"translate\":\"Find an Ocean Monument\"}",
-                    "icon": {
-                        "present": true,
-                        "itemId": 432,
-                        "itemCount": 1
-                    },
-                    "frameType": 0,
-                    "flags": {
-                        "_unused": 0,
-                        "hidden": 0,
-                        "show_toast": 1,
-                        "has_background_texture": 0
-                    },
-                    "xCord": 6,
-                    "yCord": 17.5
-                },
-                "criteria": [
-                    {
-                        "key": "monument"
-                    }
-                ],
-                "requirements": [
-                    [
-                        "monument"
+                        "AdvancementTreeFirstChild"
                     ]
                 ]
             }
@@ -358,89 +150,46 @@ let PacketData = {
     "identifiers": [],
     "progressMapping": [
         {
-            "key": "blazeandcave:adventure/im_not_lost_anymore",
+            "key": "adventure:root",
             "value": [
                 {
-                    "criterionIdentifier": "map"
-                }
-            ]
-        },
-        {
-            "key": "blazeandcave:adventure/do_you_want_to_trade",
-            "value": [
-                {
-                    "criterionIdentifier": "village"
-                }
-            ]
-        },
-        {
-            "key": "minecraft:adventure/trade",
-            "value": [
-                {
-                    "criterionIdentifier": "trade"
-                }
-            ]
-        },
-        {
-            "key": "blazeandcave:adventure/monumental",
-            "value": [
-                {
-                    "criterionIdentifier": "monument"
-                }
-            ]
-        },
-        {
-            "key": "blazeandcave:adventure/treasure_map",
-            "value": [
-                {
-                    "criterionIdentifier": "trade"
-                }
-            ]
-        },
-        {
-            "key": "minecraft:adventure/root",
-            "value": [
-                {
-                    "criterionIdentifier": "killed_by_something"
-                },
-                {
-                    "criterionIdentifier": "killed_something"
-                }
-            ]
-        },
-        {
-            "key": "blazeandcave:adventure/mapmaker",
-            "value": [
-                {
-                    "criterionIdentifier": "map",
+                    "criterionIdentifier": "AdvancementTreeRoot",
                     "criterionProgress": [
                         386,
-                        -190295734
+                        -165642552
                     ]
                 }
             ]
         },
         {
-            "key": "blazeandcave:adventure/knowledge_is_power",
+            "key": "adventure:adv2",
             "value": [
                 {
-                    "criterionIdentifier": "trade"
+                    "criterionIdentifier": "AdvancementTreeLast"
                 }
             ]
         },
         {
-            "key": "blazeandcave:adventure/mapmakers_table",
+            "key": "adventure:adv1",
             "value": [
                 {
-                    "criterionIdentifier": "cartography_table"
+                    "criterionIdentifier": "AdvancementTreeSecond",
+                    "criterionProgress": [
+                        386,
+                        -165638552
+                    ]
                 }
             ]
         },
         {
-            "key": "blazeandcave:adventure/house_of_psychos",
+            "key": "adventure:adv3",
             "value": [
                 {
-                    "criterionIdentifier": "mansion"
+                    "criterionIdentifier": "AdvancementTreeFirstChild",
+                    "criterionProgress": [
+                        386,
+                        -165634552
+                    ]
                 }
             ]
         }

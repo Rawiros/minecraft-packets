@@ -110,6 +110,7 @@ function bindEvents(ProtocolClient: Protocol.Client) {
         // Current packet paths
         let PACKET_NAME = NORMALIZED_NAME;
         let PACKET_FILE = path.join(VERSION_FOLDER, PACKET_NAME, "index.ts");
+        let PACKET_CONTENT = path.join(VERSION_FOLDER, PACKET_NAME, "index.json");
         let PACKET_INTERFACE = path.join(TYPES_FOLDER, NORMALIZED_NAME + ".d.ts");
         let PACKET_FOLDER = path.join(VERSION_FOLDER, PACKET_NAME);
         let PACKETS_TIME = path.join(VERSION_FOLDER, VERSION + ".txt");
@@ -146,6 +147,7 @@ function bindEvents(ProtocolClient: Protocol.Client) {
 
         // Create typescript file with example use of current packet
         // Import Type For This Packet\nimport RootObject from './../@types/" + NORMALIZED_NAME + ".d';\n
+        fs.writeFileSync(PACKET_CONTENT, Stringify(data), "utf8");
         fs.writeFileSync(PACKET_FILE, "/**\n" + Meta.map(e => " * " + e).join("\n") + "\n */\n// Define Default Packet Data\nlet PacketData = " + Stringify(data) + ";\n// Export Default Packet Data as Default\nexport default PacketData;", "utf8");
 
         // Log information about this to console, same as logging information about typescript interface
