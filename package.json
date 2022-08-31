@@ -1,0 +1,21 @@
+{
+  "name": "minecraft-packets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rawir",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "json2ts": "^0.0.7",
+    "minecraft-protocol": "^1.36.1",
+    "tslog": "^3.3.4"
+  }
+}
