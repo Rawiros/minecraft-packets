@@ -1,4 +1,4 @@
-export default interface RootObject {
+export default interface InitializeWorldBorder {
 	x: number;
 	z: number;
 	oldDiameter: number;

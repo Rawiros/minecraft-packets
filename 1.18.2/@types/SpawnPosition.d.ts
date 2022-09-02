@@ -4,7 +4,7 @@ export interface Location {
 	y: number;
 }
 
-export default interface RootObject {
+export default interface SpawnPosition {
 	location: Location;
 	angle: number;
 }

@@ -1,12 +1,9 @@
 export interface Data {
 	uUID: string;
-	name: string;
-	properties: any[];
-	gamemode: number;
 	ping: number;
 }
 
-export default interface RootObject {
+export default interface PlayerInfo {
 	action: number;
 	data: Data[];
 }

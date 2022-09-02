@@ -1,12 +1,12 @@
 {
-    "entityId": 17,
+    "entityId": 36,
     "isHardcore": false,
-    "gameMode": 1,
-    "previousGameMode": 0,
+    "gameMode": 0,
+    "previousGameMode": -1,
     "worldNames": [
         "minecraft:overworld",
-        "minecraft:the_nether",
-        "minecraft:the_end"
+        "minecraft:the_end",
+        "minecraft:the_nether"
     ],
     "dimensionCodec": {
         "type": "compound",
@@ -5357,12 +5357,12 @@
     },
     "worldName": "minecraft:overworld",
     "hashedSeed": [
-        264575484,
-        1586805883
+        -1580398082,
+        48409927
     ],
-    "maxPlayers": 5,
-    "viewDistance": 11,
-    "simulationDistance": 10,
+    "maxPlayers": 35,
+    "viewDistance": 4,
+    "simulationDistance": 3,
     "reducedDebugInfo": false,
     "enableRespawnScreen": true,
     "isDebug": false,

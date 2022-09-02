@@ -2,158 +2,88 @@ import { Json2Ts } from 'json2ts/src/json2ts';
 import Protocol, { states } from 'minecraft-protocol';
 import { Logger } from 'tslog';
 import path from 'path';
-import fs from 'fs';
+import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'fs';
 
-// Client Settings
-let USERNAME = "PacketUser";
-let VERSION = "1.18.2";
+type Version = `${string}.${string}.${string}` | `${string}.${string}`;
+let sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-// Target Server
-let SERVER = "localhost";
-let PORT = 25565
+interface Options {
+    versions: Version[]
+    ignored_packets?: string[]
+    host?: string
+    port?: number
+};
 
-// Proxy Server
-let PROXY_ENABLE = false;
-let PROXY_PORT = 2566
-
-// Some Configurations
-let ignoredPackets = [
-    "unlock_recipes",
-    "update_time",
-    "map_chunk",
-    "rel_entity_move",
-    "entity_move_look",
-    "entity_head_rotation",
-    "entity_velocity",
-];
-let VERSION_FOLDER = path.join(__dirname, VERSION);
-let TYPES_FOLDER = path.join(VERSION_FOLDER, "@types");
-
-let NormalizePacketName = (value: string) => value.split("_").map(e => e[0].toUpperCase() + e.slice(1).toLowerCase()).join("");
-let Stringify = (data: any) => JSON.stringify(data, (_, value) => (typeof (value) === "bigint") ? value.toString() : value, 4);
+let getNormalizedPacketName = (value: string) => value.split("_").map(e => e[0].toUpperCase() + e.slice(1).toLowerCase()).join("");
+let stringify = (data: any) => JSON.stringify(data, (_, value) => (typeof (value) === "bigint") ? value.toString() : value, 4);
 let logger = new Logger({ displayFilePath: "hidden", displayFunctionName: false, name: "Minecraft Packets" });
 let json2ts = new Json2Ts();
 
-// Create version folder if is not exist
-if (!fs.existsSync(VERSION_FOLDER)) {
-    fs.mkdirSync(VERSION_FOLDER);
-};
+export default async function create(o: Options) {
 
-// Same as above, but with '@types' folder
-if (!fs.existsSync(TYPES_FOLDER)) {
-    fs.mkdirSync(TYPES_FOLDER);
-};
+    if (!o) {
+        throw new Error("Provided unknown options")
+    };
 
-// Log Infomations
-logger.info("Client Configuration", { USERNAME, VERSION });
-logger.info("Target Server Configuration", { SERVER, PORT });
-
-// Create connection
-let ClientSettings: Protocol.ClientOptions = { username: USERNAME, version: VERSION, host: SERVER, port: PORT };
-let Client = Protocol.createClient(ClientSettings);
-let Server: Protocol.Server | null = null;
-
-if (PROXY_ENABLE) {
-    Server = Protocol.createServer({ port: PROXY_PORT, version: VERSION, motd: "                 §3§lMinecraft Proxy§r\n                   §b§lRunning now" });
-    Server.on("login", e => {
-        logger.info("Player", e.username, "connected to proxy server");
-        e.write("chat", { position: 1, sender: "0", message: JSON.stringify({ text: "§8[⚡] §3» Welcome §b" + e.username + "§r\n§8[⚡] §3» Server: §b" + SERVER + ":" + PORT }) });
-    });
-};
-
-// Execute when client connected to server
-// @ts-ignore
-Client.on("connect", () => logger.info("Connected to", SERVER, "with port", PORT, "using version", VERSION, "and username", USERNAME));
-
-// Redirect packets when proxy server is enabled
-if (PROXY_ENABLE && Server instanceof Protocol.Server) {
-    Server.on('login', e => {
-        Client = Protocol.createClient(ClientSettings);
-        bindEvents(Client);
-
-        e.on('packet', (data, meta) => {
-            if (meta.state !== states.PLAY) {
-                return;
-            };
-
-            Client.write(meta.name, data);
-        });
-
-        Client.on('packet', (data, meta) => {
-            if (meta.state !== states.PLAY) {
-                return;
-            };
-
-            e.write(meta.name, data)
-        });
-
-    });
-};
-
-if (!PROXY_ENABLE) {
-    bindEvents(Client);
-};
-
-function bindEvents(ProtocolClient: Protocol.Client) {
-    let date = new Date().getTime();
-
-    ProtocolClient.on("packet", (data, PacketMeta) => {
-        if(ignoredPackets.includes(PacketMeta.name)) {
-            return;
-        };
-
-        let NewDate = new Date().getTime() - date;
-
-        // Get normalized packet name from original packet name
-        let NORMALIZED_NAME = NormalizePacketName(PacketMeta.name);
-
-        // Current packet paths
-        let PACKET_NAME = NORMALIZED_NAME;
-        let PACKET_FILE = path.join(VERSION_FOLDER, PACKET_NAME, "index.ts");
-        let PACKET_CONTENT = path.join(VERSION_FOLDER, PACKET_NAME, "index.json");
-        let PACKET_INTERFACE = path.join(TYPES_FOLDER, NORMALIZED_NAME + ".d.ts");
-        let PACKET_FOLDER = path.join(VERSION_FOLDER, PACKET_NAME);
-        let PACKETS_TIME = path.join(VERSION_FOLDER, VERSION + ".txt");
-        fs.appendFileSync(PACKETS_TIME, ` ${PacketMeta.name} (${NORMALIZED_NAME}) | ${NewDate.toFixed(1)}ms\n`, "utf8");
-
-
-        // Let's log this into console using tslog if proxy server is not enabled
-        if (!PROXY_ENABLE) {
-            // logger.info("S2C | Packet: " + NORMALIZED_NAME, data);
-        };
-
-        // Create folder for this packet when not exist
-        if (!fs.existsSync(PACKET_FOLDER)) {
-            fs.mkdirSync(PACKET_FOLDER);
-        };
-
-        // Create typescript interface for this packet
-        fs.writeFileSync(PACKET_INTERFACE, json2ts.convert(Stringify(data)).replace("export interface RootObject", "export default interface RootObject"), "utf8");
-
-        // Log information about this to console, ofc if proxy server is not running
-        if (!PROXY_ENABLE) {
-            logger.info("Created typescript interface for packet", NORMALIZED_NAME);
-        };
-
-        // Array with some informations
-        let Meta = [
-            "Name: " + PacketMeta.name,
-            "State: " + PacketMeta.state.toUpperCase(),
-            "Normalized Name: " + NORMALIZED_NAME,
-            "Minecraft Version: " + VERSION,
-            "ISO Creation Date: " + new Date().toISOString(),
-            "Creation Date: " + new Date(),
+    if (!o.ignored_packets) {
+        o.ignored_packets = [
+            "unlock_recipes",
+            "update_time",
+            "map_chunk",
+            "rel_entity_move",
+            "entity_move_look",
+            "entity_head_rotation",
+            "entity_velocity",
         ];
+    };
 
-        // Create typescript file with example use of current packet
-        // Import Type For This Packet\nimport RootObject from './../@types/" + NORMALIZED_NAME + ".d';\n
-        fs.writeFileSync(PACKET_CONTENT, Stringify(data), "utf8");
-        fs.writeFileSync(PACKET_FILE, "/**\n" + Meta.map(e => " * " + e).join("\n") + "\n */\n// Define Default Packet Data\nlet PacketData = " + Stringify(data) + ";\n// Export Default Packet Data as Default\nexport default PacketData;", "utf8");
+    for (let index in o.versions) {
+        let version = o.versions[index]; // version
+        let vPath = path.join(__dirname, version); // version path
+        let vTypes = path.join(vPath, "@types"); // @types for this version
+        let username = Math.random().toString(36).slice(3); // player username
+        let vREADME = path.join(vPath, "README.md"); // Readme for this version
 
-        // Log information about this to console, same as logging information about typescript interface
-        if (!PROXY_ENABLE) {
-            logger.info("Created typescript packet example for", NORMALIZED_NAME)
-        };
+        if (!existsSync(vPath)) mkdirSync(vPath);
+        if (!existsSync(vTypes)) mkdirSync(vTypes);
 
-    });
+        writeFileSync(vREADME, `### ${version}, ${username}\n- Started: \`${new Date().toISOString()}\`\n- Username: \`${username}\`\n\n| Packet Normalized | Packet Name | Time |\n|---|---|---|\n`);
+        // create client
+        let StartDate = (new Date).getTime();
+        let client = Protocol.createClient({ username, version, port: (o?.port) ?? undefined, host: (o?.host) ?? undefined });
+        logger.info("Created client for version", version);
+
+        // on connected
+        // @ts-ignore
+        client.on('connect', () => logger.info("Connected as", username, `(${version})`));
+
+        client.on('packet', (data, meta) => {
+            if (o.ignored_packets?.includes(meta.name)) {
+                return;
+            };
+
+            let NormalizedName = getNormalizedPacketName(meta.name);
+
+            let PacketFolder = path.join(vPath, NormalizedName);
+            // let PacketFile = path.join(PacketFolder, "index.ts");
+            let PacketJSONFile = path.join(PacketFolder, "index.json");
+            let PacketInterfaceFile = path.join(vTypes, NormalizedName + ".d.ts");
+
+            if (!existsSync(PacketFolder)) mkdirSync(PacketFolder);
+            writeFileSync(PacketJSONFile, stringify(data), "utf8");
+            writeFileSync(PacketInterfaceFile, json2ts.convert(stringify(data)).replace("export interface RootObject", "export default interface " + NormalizedName), "utf8");
+
+            let Time = (new Date).getTime() - StartDate;
+            appendFileSync(vREADME, `| ${NormalizedName} | ${meta.name} | ${Time.toFixed(1)}ms\n`);
+        });
+
+        await sleep(3500);
+    };
+
+};
+
+if (require.main === module) {
+    create({ versions: [ "1.18.2" ], host: "localhost", port: 25565, ignored_packets: [] })
+    // create({ versions: [ "1.18.2" ], host: "6.tcp.ngrok.io", port: 10475 })
+    // create({ versions: ["1.18.2", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.11.2", "1.10", "1.8", "1.9"], host: "6.tcp.ngrok.io", port: 10475 })
 }

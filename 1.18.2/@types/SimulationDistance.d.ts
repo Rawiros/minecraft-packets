@@ -1,3 +1,3 @@
-export default interface RootObject {
+export default interface SimulationDistance {
 	distance: number;
 }

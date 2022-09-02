@@ -42,9 +42,7 @@
                 31,
                 32,
                 33,
-                34,
-                35,
-                36
+                34
             ]
         },
         {
@@ -56,7 +54,7 @@
                 "command_node_type": 1
             },
             "children": [
-                37
+                35
             ],
             "extraNodeData": {
                 "name": "?"
@@ -71,7 +69,7 @@
                 "command_node_type": 1
             },
             "children": [
-                38
+                36
             ],
             "extraNodeData": {
                 "name": "about"
@@ -86,7 +84,7 @@
                 "command_node_type": 1
             },
             "children": [
-                39
+                37
             ],
             "extraNodeData": {
                 "name": "bukkit:?"
@@ -101,7 +99,7 @@
                 "command_node_type": 1
             },
             "children": [
-                40
+                38
             ],
             "extraNodeData": {
                 "name": "bukkit:about"
@@ -116,7 +114,7 @@
                 "command_node_type": 1
             },
             "children": [
-                41
+                39
             ],
             "extraNodeData": {
                 "name": "bukkit:help"
@@ -131,7 +129,7 @@
                 "command_node_type": 1
             },
             "children": [
-                42
+                40
             ],
             "extraNodeData": {
                 "name": "bukkit:pl"
@@ -146,7 +144,7 @@
                 "command_node_type": 1
             },
             "children": [
-                43
+                41
             ],
             "extraNodeData": {
                 "name": "bukkit:plugins"
@@ -161,7 +159,7 @@
                 "command_node_type": 1
             },
             "children": [
-                44
+                42
             ],
             "extraNodeData": {
                 "name": "bukkit:ver"
@@ -176,7 +174,7 @@
                 "command_node_type": 1
             },
             "children": [
-                45
+                43
             ],
             "extraNodeData": {
                 "name": "bukkit:version"
@@ -191,37 +189,7 @@
                 "command_node_type": 1
             },
             "children": [
-                46,
-                47
-            ],
-            "extraNodeData": {
-                "name": "geyser"
-            }
-        },
-        {
-            "flags": {
-                "unused": 0,
-                "has_custom_suggestions": 0,
-                "has_redirect_node": 1,
-                "has_command": 0,
-                "command_node_type": 1
-            },
-            "children": [],
-            "redirectNode": 10,
-            "extraNodeData": {
-                "name": "geyser-spigot:geyser"
-            }
-        },
-        {
-            "flags": {
-                "unused": 0,
-                "has_custom_suggestions": 0,
-                "has_redirect_node": 0,
-                "has_command": 1,
-                "command_node_type": 1
-            },
-            "children": [
-                48
+                44
             ],
             "extraNodeData": {
                 "name": "help"
@@ -236,7 +204,7 @@
                 "command_node_type": 1
             },
             "children": [
-                49
+                45
             ],
             "extraNodeData": {
                 "name": "icanhasbukkit"
@@ -251,7 +219,7 @@
                 "command_node_type": 1
             },
             "children": [
-                50
+                46
             ],
             "extraNodeData": {
                 "name": "me"
@@ -266,7 +234,7 @@
                 "command_node_type": 1
             },
             "children": [
-                51
+                47
             ],
             "extraNodeData": {
                 "name": "mem"
@@ -281,7 +249,7 @@
                 "command_node_type": 1
             },
             "children": [
-                52
+                48
             ],
             "extraNodeData": {
                 "name": "minecraft:help"
@@ -296,7 +264,7 @@
                 "command_node_type": 1
             },
             "children": [
-                50
+                46
             ],
             "extraNodeData": {
                 "name": "minecraft:me"
@@ -311,7 +279,7 @@
                 "command_node_type": 1
             },
             "children": [
-                53
+                49
             ],
             "extraNodeData": {
                 "name": "minecraft:msg"
@@ -326,7 +294,7 @@
                 "command_node_type": 1
             },
             "children": [
-                54
+                50
             ],
             "extraNodeData": {
                 "name": "minecraft:teammsg"
@@ -341,7 +309,7 @@
                 "command_node_type": 1
             },
             "children": [],
-            "redirectNode": 24,
+            "redirectNode": 22,
             "extraNodeData": {
                 "name": "minecraft:tell"
             }
@@ -355,7 +323,7 @@
                 "command_node_type": 1
             },
             "children": [],
-            "redirectNode": 30,
+            "redirectNode": 28,
             "extraNodeData": {
                 "name": "minecraft:tm"
             }
@@ -369,7 +337,7 @@
                 "command_node_type": 1
             },
             "children": [
-                55
+                51
             ],
             "extraNodeData": {
                 "name": "minecraft:trigger"
@@ -384,7 +352,7 @@
                 "command_node_type": 1
             },
             "children": [],
-            "redirectNode": 24,
+            "redirectNode": 22,
             "extraNodeData": {
                 "name": "minecraft:w"
             }
@@ -398,7 +366,7 @@
                 "command_node_type": 1
             },
             "children": [
-                53
+                49
             ],
             "extraNodeData": {
                 "name": "msg"
@@ -413,7 +381,7 @@
                 "command_node_type": 1
             },
             "children": [
-                56
+                52
             ],
             "extraNodeData": {
                 "name": "pl"
@@ -428,7 +396,7 @@
                 "command_node_type": 1
             },
             "children": [
-                57
+                53
             ],
             "extraNodeData": {
                 "name": "plugins"
@@ -443,7 +411,7 @@
                 "command_node_type": 1
             },
             "children": [
-                58
+                54
             ],
             "extraNodeData": {
                 "name": "ram"
@@ -458,7 +426,7 @@
                 "command_node_type": 1
             },
             "children": [
-                59
+                55
             ],
             "extraNodeData": {
                 "name": "ram:mem"
@@ -473,7 +441,7 @@
                 "command_node_type": 1
             },
             "children": [
-                60
+                56
             ],
             "extraNodeData": {
                 "name": "ram:ram"
@@ -488,7 +456,7 @@
                 "command_node_type": 1
             },
             "children": [
-                54
+                50
             ],
             "extraNodeData": {
                 "name": "teammsg"
@@ -503,7 +471,7 @@
                 "command_node_type": 1
             },
             "children": [],
-            "redirectNode": 24,
+            "redirectNode": 22,
             "extraNodeData": {
                 "name": "tell"
             }
@@ -517,7 +485,7 @@
                 "command_node_type": 1
             },
             "children": [],
-            "redirectNode": 30,
+            "redirectNode": 28,
             "extraNodeData": {
                 "name": "tm"
             }
@@ -531,7 +499,7 @@
                 "command_node_type": 1
             },
             "children": [
-                55
+                51
             ],
             "extraNodeData": {
                 "name": "trigger"
@@ -546,7 +514,7 @@
                 "command_node_type": 1
             },
             "children": [
-                61
+                57
             ],
             "extraNodeData": {
                 "name": "ver"
@@ -561,7 +529,7 @@
                 "command_node_type": 1
             },
             "children": [
-                62
+                58
             ],
             "extraNodeData": {
                 "name": "version"
@@ -576,7 +544,7 @@
                 "command_node_type": 1
             },
             "children": [],
-            "redirectNode": 24,
+            "redirectNode": 22,
             "extraNodeData": {
                 "name": "w"
             }
@@ -728,32 +696,6 @@
         {
             "flags": {
                 "unused": 0,
-                "has_custom_suggestions": 0,
-                "has_redirect_node": 0,
-                "has_command": 1,
-                "command_node_type": 1
-            },
-            "children": [],
-            "extraNodeData": {
-                "name": "?"
-            }
-        },
-        {
-            "flags": {
-                "unused": 0,
-                "has_custom_suggestions": 0,
-                "has_redirect_node": 0,
-                "has_command": 1,
-                "command_node_type": 1
-            },
-            "children": [],
-            "extraNodeData": {
-                "name": "help"
-            }
-        },
-        {
-            "flags": {
-                "unused": 0,
                 "has_custom_suggestions": 1,
                 "has_redirect_node": 0,
                 "has_command": 1,
@@ -838,7 +780,7 @@
                 "command_node_type": 2
             },
             "children": [
-                63
+                59
             ],
             "extraNodeData": {
                 "name": "targets",
@@ -874,8 +816,8 @@
                 "command_node_type": 2
             },
             "children": [
-                64,
-                65
+                60,
+                61
             ],
             "extraNodeData": {
                 "name": "objective",
@@ -1018,7 +960,7 @@
                 "command_node_type": 1
             },
             "children": [
-                66
+                62
             ],
             "extraNodeData": {
                 "name": "add"
@@ -1033,7 +975,7 @@
                 "command_node_type": 1
             },
             "children": [
-                66
+                62
             ],
             "extraNodeData": {
                 "name": "set"

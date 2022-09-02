@@ -386,7 +386,7 @@ export interface Dimension {
 	value: Value;
 }
 
-export default interface RootObject {
+export default interface Login {
 	entityId: number;
 	isHardcore: boolean;
 	gameMode: number;

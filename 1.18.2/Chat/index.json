@@ -1,5 +1,5 @@
 {
-    "message": "{\"color\":\"yellow\",\"translate\":\"multiplayer.player.joined\",\"with\":[{\"insertion\":\"PacketUser\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/tell PacketUser \"},\"hoverEvent\":{\"action\":\"show_entity\",\"contents\":{\"type\":\"minecraft:player\",\"id\":\"b3b1f2af-d604-30fb-87b7-09a24d2fc754\",\"name\":{\"text\":\"PacketUser\"}}},\"extra\":[{\"text\":\"\"},{\"text\":\"PacketUser\"},{\"text\":\"\"}],\"text\":\"\"}]}",
+    "message": "{\"translate\":\"chat.type.advancement.task\",\"with\":[{\"insertion\":\"xpscmmo7x\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/tell xpscmmo7x \"},\"hoverEvent\":{\"action\":\"show_entity\",\"contents\":{\"type\":\"minecraft:player\",\"id\":\"05ae97b7-3a48-3ea3-9ae5-47171c96a9b0\",\"name\":{\"text\":\"xpscmmo7x\"}}},\"text\":\"xpscmmo7x\"},{\"color\":\"green\",\"translate\":\"chat.square_brackets\",\"with\":[{\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"color\":\"green\",\"extra\":[{\"text\":\"\\n\"},{\"translate\":\"advancements.story.enter_the_end.description\"}],\"translate\":\"advancements.story.enter_the_end.title\"}},\"translate\":\"advancements.story.enter_the_end.title\"}]}]}",
     "position": 1,
     "sender": "00000000-0000-0000-0000-000000000000"
 }

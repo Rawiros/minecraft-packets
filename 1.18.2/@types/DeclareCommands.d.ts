@@ -11,7 +11,7 @@ export interface Node {
 	children: number[];
 }
 
-export default interface RootObject {
+export default interface DeclareCommands {
 	nodes: Node[];
 	rootIndex: number;
 }

@@ -8,6 +8,6 @@ export interface Tag {
 	tags: Tag[];
 }
 
-export default interface RootObject {
+export default interface Tags {
 	tags: Tag[];
 }

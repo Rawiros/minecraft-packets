@@ -6,7 +6,7 @@ export interface CarriedItem {
 	present: boolean;
 }
 
-export default interface RootObject {
+export default interface WindowItems {
 	windowId: number;
 	stateId: number;
 	items: Item[];

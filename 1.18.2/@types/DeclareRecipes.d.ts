@@ -5,10 +5,8 @@ export interface Result {
 }
 
 export interface Data {
-	width: number;
-	height: number;
 	group: string;
-	ingredients: any[][][];
+	ingredients: any[][];
 	result: Result;
 }
 
@@ -18,6 +16,6 @@ export interface Recipe {
 	data: Data;
 }
 
-export default interface RootObject {
+export default interface DeclareRecipes {
 	recipes: Recipe[];
 }

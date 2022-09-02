@@ -1,4 +1,4 @@
-export default interface RootObject {
+export default interface UpdateHealth {
 	health: number;
 	food: number;
 	foodSaturation: number;

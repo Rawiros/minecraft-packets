@@ -43,7 +43,6 @@ export interface AdvancementMapping {
 
 export interface Value {
 	criterionIdentifier: string;
-	criterionProgress: number[];
 }
 
 export interface ProgressMapping {
@@ -51,7 +50,7 @@ export interface ProgressMapping {
 	value: Value[];
 }
 
-export default interface RootObject {
+export default interface Advancements {
 	reset: boolean;
 	advancementMapping: AdvancementMapping[];
 	identifiers: any[];

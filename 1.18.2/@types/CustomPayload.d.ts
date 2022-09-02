@@ -3,7 +3,7 @@ export interface Data {
 	data: number[];
 }
 
-export default interface RootObject {
+export default interface CustomPayload {
 	channel: string;
 	data: Data;
 }

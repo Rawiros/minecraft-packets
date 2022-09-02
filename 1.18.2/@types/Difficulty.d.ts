@@ -1,4 +1,4 @@
-export default interface RootObject {
+export default interface Difficulty {
 	difficulty: number;
 	difficultyLocked: boolean;
 }

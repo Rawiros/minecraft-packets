@@ -4,7 +4,7 @@ export interface Metadata {
 	value: number;
 }
 
-export default interface RootObject {
+export default interface EntityMetadata {
 	entityId: number;
 	metadata: Metadata[];
 }

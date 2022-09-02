@@ -4,7 +4,7 @@ export interface Property {
 	modifiers: any[];
 }
 
-export default interface RootObject {
+export default interface EntityUpdateAttributes {
 	entityId: number;
 	properties: Property[];
 }

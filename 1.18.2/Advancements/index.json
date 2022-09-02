@@ -1,12 +1,115 @@
 {
-    "reset": true,
+    "reset": false,
     "advancementMapping": [
         {
-            "key": "adventure:root",
+            "key": "minecraft:end/root",
             "value": {
                 "displayData": {
-                    "title": "{\"text\":\"First Advancement\"}",
-                    "description": "{\"text\":\"Description\"}",
+                    "title": "{\"translate\":\"advancements.end.root.title\"}",
+                    "description": "{\"translate\":\"advancements.end.root.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 312,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 0,
+                        "has_background_texture": 1
+                    },
+                    "backgroundTexture": "minecraft:textures/gui/advancements/backgrounds/end.png",
+                    "xCord": 0,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "entered_end"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_end"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/kill_dragon",
+            "value": {
+                "parentId": "minecraft:end/root",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.end.kill_dragon.title\"}",
+                    "description": "{\"translate\":\"advancements.end.kill_dragon.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 958,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 1,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "killed_dragon"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "killed_dragon"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/dragon_egg",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.end.dragon_egg.title\"}",
+                    "description": "{\"translate\":\"advancements.end.dragon_egg.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 314,
+                        "itemCount": 1
+                    },
+                    "frameType": 2,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 0
+                },
+                "criteria": [
+                    {
+                        "key": "dragon_egg"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "dragon_egg"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/enter_end_gateway",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.end.enter_end_gateway.title\"}",
+                    "description": "{\"translate\":\"advancements.end.enter_end_gateway.description\"}",
                     "icon": {
                         "present": true,
                         "itemId": 858,
@@ -17,31 +120,132 @@
                         "_unused": 0,
                         "hidden": 0,
                         "show_toast": 1,
-                        "has_background_texture": 1
+                        "has_background_texture": 0
                     },
-                    "backgroundTexture": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-                    "xCord": 0,
-                    "yCord": 0.5
+                    "xCord": 2,
+                    "yCord": 1
                 },
                 "criteria": [
                     {
-                        "key": "AdvancementTreeRoot"
+                        "key": "entered_end_gateway"
                     }
                 ],
                 "requirements": [
                     [
-                        "AdvancementTreeRoot"
+                        "entered_end_gateway"
                     ]
                 ]
             }
         },
         {
-            "key": "adventure:adv1",
+            "key": "minecraft:end/respawn_dragon",
             "value": {
-                "parentId": "adventure:root",
+                "parentId": "minecraft:end/kill_dragon",
                 "displayData": {
-                    "title": "{\"text\":\"Second Advancement\"}",
-                    "description": "{\"text\":\"Description\"}",
+                    "title": "{\"translate\":\"advancements.end.respawn_dragon.title\"}",
+                    "description": "{\"translate\":\"advancements.end.respawn_dragon.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 998,
+                        "itemCount": 1
+                    },
+                    "frameType": 2,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 2
+                },
+                "criteria": [
+                    {
+                        "key": "summoned_dragon"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "summoned_dragon"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/dragon_breath",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.end.dragon_breath.title\"}",
+                    "description": "{\"translate\":\"advancements.end.dragon_breath.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 1004,
+                        "itemCount": 1
+                    },
+                    "frameType": 2,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 3
+                },
+                "criteria": [
+                    {
+                        "key": "dragon_breath"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "dragon_breath"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/enter_the_end",
+            "value": {
+                "parentId": "minecraft:story/follow_ender_eye",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.enter_the_end.title\"}",
+                    "description": "{\"translate\":\"advancements.story.enter_the_end.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 312,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 8,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "entered_end"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_end"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/follow_ender_eye",
+            "value": {
+                "parentId": "minecraft:story/enter_the_nether",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.follow_ender_eye.title\"}",
+                    "description": "{\"translate\":\"advancements.story.follow_ender_eye.description\"}",
                     "icon": {
                         "present": true,
                         "itemId": 871,
@@ -54,32 +258,188 @@
                         "show_toast": 1,
                         "has_background_texture": 0
                     },
-                    "xCord": 1,
-                    "yCord": 0
+                    "xCord": 7,
+                    "yCord": 1.5
                 },
                 "criteria": [
                     {
-                        "key": "AdvancementTreeSecond"
+                        "key": "in_stronghold"
                     }
                 ],
                 "requirements": [
                     [
-                        "AdvancementTreeSecond"
+                        "in_stronghold"
                     ]
                 ]
             }
         },
         {
-            "key": "adventure:adv2",
+            "key": "minecraft:story/enter_the_nether",
             "value": {
-                "parentId": "adventure:adv1",
+                "parentId": "minecraft:story/form_obsidian",
                 "displayData": {
-                    "title": "{\"text\":\"Last Advancement\"}",
-                    "description": "{\"text\":\"Description\"}",
+                    "title": "{\"translate\":\"advancements.story.enter_the_nether.title\"}",
+                    "description": "{\"translate\":\"advancements.story.enter_the_nether.description\"}",
                     "icon": {
                         "present": true,
-                        "itemId": 998,
+                        "itemId": 680,
+                        "itemCount": 1,
+                        "nbtData": {
+                            "type": "compound",
+                            "name": "",
+                            "value": {
+                                "Damage": {
+                                    "type": "int",
+                                    "value": 0
+                                }
+                            }
+                        }
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 6,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "entered_nether"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_nether"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/form_obsidian",
+            "value": {
+                "parentId": "minecraft:story/lava_bucket",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.form_obsidian.title\"}",
+                    "description": "{\"translate\":\"advancements.story.form_obsidian.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 235,
                         "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 5,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "obsidian"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "obsidian"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/lava_bucket",
+            "value": {
+                "parentId": "minecraft:story/smelt_iron",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.lava_bucket.title\"}",
+                    "description": "{\"translate\":\"advancements.story.lava_bucket.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 778,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 4,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "lava_bucket"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "lava_bucket"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/smelt_iron",
+            "value": {
+                "parentId": "minecraft:story/upgrade_tools",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.smelt_iron.title\"}",
+                    "description": "{\"translate\":\"advancements.story.smelt_iron.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 692,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 3,
+                    "yCord": 1.25
+                },
+                "criteria": [
+                    {
+                        "key": "iron"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "iron"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/upgrade_tools",
+            "value": {
+                "parentId": "minecraft:story/mine_stone",
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.upgrade_tools.title\"}",
+                    "description": "{\"translate\":\"advancements.story.upgrade_tools.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 706,
+                        "itemCount": 1,
+                        "nbtData": {
+                            "type": "compound",
+                            "name": "",
+                            "value": {
+                                "Damage": {
+                                    "type": "int",
+                                    "value": 0
+                                }
+                            }
+                        }
                     },
                     "frameType": 0,
                     "flags": {
@@ -89,31 +449,41 @@
                         "has_background_texture": 0
                     },
                     "xCord": 2,
-                    "yCord": 0
+                    "yCord": 1.25
                 },
                 "criteria": [
                     {
-                        "key": "AdvancementTreeLast"
+                        "key": "stone_pickaxe"
                     }
                 ],
                 "requirements": [
                     [
-                        "AdvancementTreeLast"
+                        "stone_pickaxe"
                     ]
                 ]
             }
         },
         {
-            "key": "adventure:adv3",
+            "key": "minecraft:story/mine_stone",
             "value": {
-                "parentId": "adventure:root",
+                "parentId": "minecraft:story/root",
                 "displayData": {
-                    "title": "{\"text\":\"First Child Advancement\"}",
-                    "description": "{\"text\":\"Description\"}",
+                    "title": "{\"translate\":\"advancements.story.mine_stone.title\"}",
+                    "description": "{\"translate\":\"advancements.story.mine_stone.description\"}",
                     "icon": {
                         "present": true,
-                        "itemId": 311,
-                        "itemCount": 1
+                        "itemId": 701,
+                        "itemCount": 1,
+                        "nbtData": {
+                            "type": "compound",
+                            "name": "",
+                            "value": {
+                                "Damage": {
+                                    "type": "int",
+                                    "value": 0
+                                }
+                            }
+                        }
                     },
                     "frameType": 0,
                     "flags": {
@@ -123,16 +493,50 @@
                         "has_background_texture": 0
                     },
                     "xCord": 1,
-                    "yCord": 1
+                    "yCord": 1.25
                 },
                 "criteria": [
                     {
-                        "key": "AdvancementTreeFirstChild"
+                        "key": "get_stone"
                     }
                 ],
                 "requirements": [
                     [
-                        "AdvancementTreeFirstChild"
+                        "get_stone"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/root",
+            "value": {
+                "displayData": {
+                    "title": "{\"translate\":\"advancements.story.root.title\"}",
+                    "description": "{\"translate\":\"advancements.story.root.description\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 14,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 0,
+                        "has_background_texture": 1
+                    },
+                    "backgroundTexture": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+                    "xCord": 0,
+                    "yCord": 1.25
+                },
+                "criteria": [
+                    {
+                        "key": "crafting_table"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "crafting_table"
                     ]
                 ]
             }
@@ -141,46 +545,130 @@
     "identifiers": [],
     "progressMapping": [
         {
-            "key": "adventure:root",
+            "key": "minecraft:end/dragon_egg",
             "value": [
                 {
-                    "criterionIdentifier": "AdvancementTreeRoot",
+                    "criterionIdentifier": "dragon_egg"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/lava_bucket",
+            "value": [
+                {
+                    "criterionIdentifier": "lava_bucket"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/kill_dragon",
+            "value": [
+                {
+                    "criterionIdentifier": "killed_dragon"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/enter_end_gateway",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_end_gateway"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/root",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_end",
                     "criterionProgress": [
                         386,
-                        -165642552
+                        -18482
                     ]
                 }
             ]
         },
         {
-            "key": "adventure:adv2",
+            "key": "minecraft:story/upgrade_tools",
             "value": [
                 {
-                    "criterionIdentifier": "AdvancementTreeLast"
+                    "criterionIdentifier": "stone_pickaxe"
                 }
             ]
         },
         {
-            "key": "adventure:adv1",
+            "key": "minecraft:story/enter_the_nether",
             "value": [
                 {
-                    "criterionIdentifier": "AdvancementTreeSecond",
+                    "criterionIdentifier": "entered_nether"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/respawn_dragon",
+            "value": [
+                {
+                    "criterionIdentifier": "summoned_dragon"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/enter_the_end",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_end",
                     "criterionProgress": [
                         386,
-                        -165638552
+                        -18479
                     ]
                 }
             ]
         },
         {
-            "key": "adventure:adv3",
+            "key": "minecraft:story/root",
             "value": [
                 {
-                    "criterionIdentifier": "AdvancementTreeFirstChild",
-                    "criterionProgress": [
-                        386,
-                        -165634552
-                    ]
+                    "criterionIdentifier": "crafting_table"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/smelt_iron",
+            "value": [
+                {
+                    "criterionIdentifier": "iron"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/dragon_breath",
+            "value": [
+                {
+                    "criterionIdentifier": "dragon_breath"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/follow_ender_eye",
+            "value": [
+                {
+                    "criterionIdentifier": "in_stronghold"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/mine_stone",
+            "value": [
+                {
+                    "criterionIdentifier": "get_stone"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/form_obsidian",
+            "value": [
+                {
+                    "criterionIdentifier": "obsidian"
                 }
             ]
         }
