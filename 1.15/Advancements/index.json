@@ -1,0 +1,488 @@
+{
+    "reset": false,
+    "advancementMapping": [
+        {
+            "key": "minecraft:story/enter_the_end",
+            "value": {
+                "parentId": "minecraft:story/follow_ender_eye",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"The End?\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Enter the End Portal\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 231,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 8,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "entered_end"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_end"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/follow_ender_eye",
+            "value": {
+                "parentId": "minecraft:story/enter_the_nether",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"Eye Spy\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Follow an Eye of Ender\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 695,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 7,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "in_stronghold"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "in_stronghold"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/enter_the_nether",
+            "value": {
+                "parentId": "minecraft:story/form_obsidian",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"We Need to Go Deeper\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Build, light and enter a Nether Portal\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 523,
+                        "itemCount": 1,
+                        "nbtData": {
+                            "type": "compound",
+                            "name": "",
+                            "value": {
+                                "Damage": {
+                                    "type": "int",
+                                    "value": 0
+                                }
+                            }
+                        }
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 6,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "entered_nether"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_nether"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/form_obsidian",
+            "value": {
+                "parentId": "minecraft:story/lava_bucket",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"Ice Bucket Challenge\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Obtain a block of obsidian\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 145,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 5,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "obsidian"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "obsidian"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:story/lava_bucket",
+            "value": {
+                "parentId": "minecraft:story/smelt_iron",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"Hot Stuff\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Fill a bucket with lava\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 597,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 4,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "lava_bucket"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "lava_bucket"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/root",
+            "value": {
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"The End\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Or the beginning?\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 231,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 0,
+                        "has_background_texture": 1
+                    },
+                    "backgroundTexture": "minecraft:textures/gui/advancements/backgrounds/end.png",
+                    "xCord": 0,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "entered_end"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_end"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/kill_dragon",
+            "value": {
+                "parentId": "minecraft:end/root",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"Free the End\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Good luck\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 774,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 1,
+                    "yCord": 1.5
+                },
+                "criteria": [
+                    {
+                        "key": "killed_dragon"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "killed_dragon"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/dragon_egg",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"The Next Generation\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Hold the Dragon Egg\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 233,
+                        "itemCount": 1
+                    },
+                    "frameType": 2,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 0
+                },
+                "criteria": [
+                    {
+                        "key": "dragon_egg"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "dragon_egg"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/enter_end_gateway",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"Remote Getaway\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Escape the island\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 682,
+                        "itemCount": 1
+                    },
+                    "frameType": 0,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 1
+                },
+                "criteria": [
+                    {
+                        "key": "entered_end_gateway"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "entered_end_gateway"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/respawn_dragon",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"The End... Again...\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Respawn the Ender Dragon\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 818,
+                        "itemCount": 1
+                    },
+                    "frameType": 2,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 2
+                },
+                "criteria": [
+                    {
+                        "key": "summoned_dragon"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "summoned_dragon"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "minecraft:end/dragon_breath",
+            "value": {
+                "parentId": "minecraft:end/kill_dragon",
+                "displayData": {
+                    "title": "{\"extra\":[{\"text\":\"You Need a Mint\"}],\"text\":\"\"}",
+                    "description": "{\"extra\":[{\"text\":\"Collect dragon\\u0027s breath in a glass bottle\"}],\"text\":\"\"}",
+                    "icon": {
+                        "present": true,
+                        "itemId": 824,
+                        "itemCount": 1
+                    },
+                    "frameType": 2,
+                    "flags": {
+                        "_unused": 0,
+                        "hidden": 0,
+                        "show_toast": 1,
+                        "has_background_texture": 0
+                    },
+                    "xCord": 2,
+                    "yCord": 3
+                },
+                "criteria": [
+                    {
+                        "key": "dragon_breath"
+                    }
+                ],
+                "requirements": [
+                    [
+                        "dragon_breath"
+                    ]
+                ]
+            }
+        }
+    ],
+    "identifiers": [],
+    "progressMapping": [
+        {
+            "key": "minecraft:end/dragon_egg",
+            "value": [
+                {
+                    "criterionIdentifier": "dragon_egg"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/lava_bucket",
+            "value": [
+                {
+                    "criterionIdentifier": "lava_bucket"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/kill_dragon",
+            "value": [
+                {
+                    "criterionIdentifier": "killed_dragon"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/enter_end_gateway",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_end_gateway"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/follow_ender_eye",
+            "value": [
+                {
+                    "criterionIdentifier": "in_stronghold"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/dragon_breath",
+            "value": [
+                {
+                    "criterionIdentifier": "dragon_breath"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/form_obsidian",
+            "value": [
+                {
+                    "criterionIdentifier": "obsidian"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/root",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_end",
+                    "criterionProgress": [
+                        387,
+                        54573615
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/enter_the_nether",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_nether"
+                }
+            ]
+        },
+        {
+            "key": "minecraft:story/enter_the_end",
+            "value": [
+                {
+                    "criterionIdentifier": "entered_end",
+                    "criterionProgress": [
+                        387,
+                        54573598
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "minecraft:end/respawn_dragon",
+            "value": [
+                {
+                    "criterionIdentifier": "summoned_dragon"
+                }
+            ]
+        }
+    ]
+}

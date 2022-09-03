@@ -1,5 +1,0 @@
-{
-    "message": "{\"translate\":\"chat.type.advancement.task\",\"with\":[{\"insertion\":\"xpscmmo7x\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/tell xpscmmo7x \"},\"hoverEvent\":{\"action\":\"show_entity\",\"contents\":{\"type\":\"minecraft:player\",\"id\":\"05ae97b7-3a48-3ea3-9ae5-47171c96a9b0\",\"name\":{\"text\":\"xpscmmo7x\"}}},\"text\":\"xpscmmo7x\"},{\"color\":\"green\",\"translate\":\"chat.square_brackets\",\"with\":[{\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"color\":\"green\",\"extra\":[{\"text\":\"\\n\"},{\"translate\":\"advancements.story.enter_the_end.description\"}],\"translate\":\"advancements.story.enter_the_end.title\"}},\"translate\":\"advancements.story.enter_the_end.title\"}]}]}",
-    "position": 1,
-    "sender": "00000000-0000-0000-0000-000000000000"
-}

@@ -1,0 +1,20 @@
+{
+    "entityId": 8573,
+    "type": 54,
+    "x": -208,
+    "y": 224,
+    "z": 48,
+    "yaw": 0,
+    "pitch": 0,
+    "headPitch": 0,
+    "velocityX": 0,
+    "velocityY": 0,
+    "velocityZ": 0,
+    "metadata": [
+        {
+            "type": 0,
+            "key": 31,
+            "value": 0
+        }
+    ]
+}

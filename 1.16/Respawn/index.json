@@ -1,0 +1,13 @@
+{
+    "dimension": "minecraft:the_end",
+    "worldName": "minecraft:the_end",
+    "hashedSeed": [
+        -1326261830,
+        1152796449
+    ],
+    "gamemode": 1,
+    "previousGamemode": 0,
+    "isDebug": false,
+    "isFlat": true,
+    "copyMetadata": true
+}

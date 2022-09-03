@@ -1,0 +1,21 @@
+{
+    "entityId": 8573,
+    "entityUUID": "1b6498b7-0b92-48c7-9edd-0a75ca46844c",
+    "type": 94,
+    "x": -6.5,
+    "y": 7,
+    "z": 1.5,
+    "yaw": 0,
+    "pitch": 0,
+    "headPitch": 0,
+    "velocityX": 0,
+    "velocityY": 0,
+    "velocityZ": 0,
+    "metadata": [
+        {
+            "key": 31,
+            "type": 0,
+            "value": 0
+        }
+    ]
+}

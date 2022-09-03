@@ -1,0 +1,12 @@
+{
+    "particleId": 1,
+    "longDistance": false,
+    "x": -2,
+    "y": 6,
+    "z": 0,
+    "offsetX": 4,
+    "offsetY": 6,
+    "offsetZ": 4,
+    "particleData": 100,
+    "particles": 100
+}

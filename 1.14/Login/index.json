@@ -1,0 +1,9 @@
+{
+    "entityId": 7788,
+    "gameMode": 0,
+    "dimension": 0,
+    "maxPlayers": 35,
+    "levelType": "flat",
+    "viewDistance": 4,
+    "reducedDebugInfo": false
+}

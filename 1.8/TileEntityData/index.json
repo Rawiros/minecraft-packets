@@ -1,0 +1,30 @@
+{
+    "location": {
+        "x": -1,
+        "y": 61,
+        "z": -2
+    },
+    "action": 12,
+    "nbtData": {
+        "type": "compound",
+        "name": "",
+        "value": {
+            "id": {
+                "type": "string",
+                "value": "jigsaw"
+            },
+            "x": {
+                "type": "int",
+                "value": -1
+            },
+            "y": {
+                "type": "int",
+                "value": 61
+            },
+            "z": {
+                "type": "int",
+                "value": -2
+            }
+        }
+    }
+}

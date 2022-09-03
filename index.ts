@@ -4,11 +4,10 @@ import { Logger } from 'tslog';
 import path from 'path';
 import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'fs';
 
-type Version = `${string}.${string}.${string}` | `${string}.${string}`;
 let sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 interface Options {
-    versions: Version[]
+    versions: string[]
     ignored_packets?: string[]
     host?: string
     port?: number
@@ -41,8 +40,10 @@ export default async function create(o: Options) {
         let version = o.versions[index]; // version
         let vPath = path.join(__dirname, version); // version path
         let vTypes = path.join(vPath, "@types"); // @types for this version
-        let username = Math.random().toString(36).slice(3); // player username
+        // let username = Math.random().toString(36).slice(3); // player username
         let vREADME = path.join(vPath, "README.md"); // Readme for this version
+
+        let username = version.replaceAll(".", "") + "_";
 
         if (!existsSync(vPath)) mkdirSync(vPath);
         if (!existsSync(vTypes)) mkdirSync(vTypes);
@@ -50,7 +51,7 @@ export default async function create(o: Options) {
         writeFileSync(vREADME, `### ${version}, ${username}\n- Started: \`${new Date().toISOString()}\`\n- Username: \`${username}\`\n\n| Packet Normalized | Packet Name | Time |\n|---|---|---|\n`);
         // create client
         let StartDate = (new Date).getTime();
-        let client = Protocol.createClient({ username, version, port: (o?.port) ?? undefined, host: (o?.host) ?? undefined });
+        let client = Protocol.createClient({ username, version, port: (o?.port) ?? undefined, host: (o?.host) ?? undefined, keepAlive: true, validateChannelProtocol: false, closeTimeout: 99999 });
         logger.info("Created client for version", version);
 
         // on connected
@@ -77,13 +78,14 @@ export default async function create(o: Options) {
             appendFileSync(vREADME, `| ${NormalizedName} | ${meta.name} | ${Time.toFixed(1)}ms\n`);
         });
 
-        await sleep(3500);
+        await sleep(5000);
     };
 
 };
 
 if (require.main === module) {
-    create({ versions: [ "1.18.2" ], host: "localhost", port: 25565, ignored_packets: [] })
+    create({ versions: ["1.18.1", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.11.2", "1.10", "1.8", "1.9"], host: "192.168.88.59", port: 25565 });
+    // create({ versions: ["1.18.1", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.11.2", "1.10", "1.8", "1.9"], host: "localhost", port: 25565 });
     // create({ versions: [ "1.18.2" ], host: "6.tcp.ngrok.io", port: 10475 })
     // create({ versions: ["1.18.2", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.11.2", "1.10", "1.8", "1.9"], host: "6.tcp.ngrok.io", port: 10475 })
 }

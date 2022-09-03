@@ -1,0 +1,12 @@
+{
+    "chunkX": 4,
+    "chunkZ": 3,
+    "skyLightMask": 0,
+    "blockLightMask": 0,
+    "emptySkyLightMask": 0,
+    "emptyBlockLightMask": 62,
+    "data": {
+        "type": "Buffer",
+        "data": []
+    }
+}
